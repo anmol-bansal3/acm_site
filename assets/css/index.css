@@ -1,3 +1,4 @@
+/****************************************** navbar ******************************************/
 
 .navigation_checkbox {
   display: none; }
@@ -128,3 +129,37 @@
 .navigation_checkbox:checked + .navigation_button .navigation_icon::after {
   top: 0;
   transform: rotate(-135deg); }
+/****************************************** footer ******************************************/
+.footer{
+  text-align: center;
+  padding: 50px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+.footer-p1{
+  width: 70%;
+  margin:0 auto;
+  color: #A4A4A4;
+}
+.footer>hr{
+  margin: 20px auto;
+  width: 90%;
+  border-top: 1px solid #EFEFEF;
+}
+.social-icons > i{
+  margin: 10px 5px;
+  border-radius: 50%;
+  padding: 5px;
+  color: #fff;
+  background-color: #C4C4C4;
+}
+.footer-p2{
+  margin-top: 30px;
+  color: #A4A4A4;
+}
+@media screen and (max-width:450px){
+  .footer{
+    padding: 30px 10px;
+  }
+}

@@ -57,6 +57,11 @@ body {
 	text-transform: uppercase;
 	margin-bottom: 2rem;
 }
+@media only screen and (max-width: 768px) {
+	.hero-header h1 {
+		font-size: 4rem;
+	}
+}
 .hero-header h3 {
 	font-size: 3.2rem;
 	color: rgba(233, 232, 232, 0.8);
@@ -65,12 +70,23 @@ body {
 .hero-header img {
 	width: 6rem;
 }
+
 .about-container {
 	padding: 25rem 0;
 	font-size: 2.2rem;
 	text-align: center;
 }
+@media only screen and (max-width: 768px) {
+	.about-container {
+		padding: 18rem 0;
+	}
+	.about {
+		padding: 0 5.5rem;
+		font-size: 1.8rem;
+	}
+}
 #why-acm {
+	overflow-x: hidden;
 	position: relative;
 	padding: 5rem 5rem;
 }
@@ -81,7 +97,7 @@ body {
 	position: relative;
 	margin-left: 5rem;
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 2.4rem;
 }
 .why-acm-heading-line {
 	position: absolute;
@@ -136,6 +152,24 @@ body {
 	text-transform: uppercase;
 	letter-spacing: .6rem;
 }
+@media only screen and (max-width: 1000px) {
+	.carousel-indicators {
+		left: 80vw;
+		top: -4.3rem;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.carousel-indicators {
+		left: 75vw;
+		top: -4.3rem;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.carousel-indicators {
+		left: 65vw;
+		top: -0.3rem;
+	}
+}
 #events {
 	position: relative;
 	padding: 5rem 5rem;
@@ -149,7 +183,7 @@ body {
 	position: relative;
 	margin-right: 10rem;
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 2.4rem;
 }
 .events-heading-line {
 	position: absolute;
@@ -243,7 +277,7 @@ h4 {
 	position: relative;
 	margin-right: 15rem;
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 2.4rem;
 }
 .contact-heading-line {
 	position: absolute;
@@ -261,6 +295,13 @@ h4 {
 }
 .contact-image img {
 	max-width: 500px;
+}
+@media only screen and (max-width: 768px) {
+	.contact-image img {
+		max-width: 300px;
+		width: 80vw;
+		position: absolute;
+	}
 }
 .contact-form {
 	display: flex;
@@ -308,8 +349,25 @@ h4 {
 	position: relative;
 	margin-left: 10rem;
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 2.4rem;
 }
+@media only screen and (max-width: 768px) {
+	.contact-heading,
+	.events-heading {
+		margin-right: 10rem;
+	}
+	#events {
+		padding: 0;
+		overflow-x: hidden;
+	}
+	.event-image {
+		margin: 0 auto;
+	}
+	#contact {
+		overflow-x: hidden;
+	}
+}
+
 .team-heading-line {
 	position: absolute;
 	transform: translate(-100%, -50%);
@@ -363,7 +421,10 @@ h4 {
 	font-size: 3rem;
 }
 .swiper-button-prev {
-	left: -100px;
 }
 .swiper-button-next {
+	left: 50px;
+}
+footer {
+	font-size: 2rem;
 }

@@ -231,7 +231,6 @@ footer p {
   display: inline-block;
   margin-right: 1.5rem;
 }
-
 .navigation_link:hover,
 .navigation_link:active {
   transform: translateX(1rem);

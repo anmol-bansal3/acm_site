@@ -5,12 +5,12 @@
 
 .navigation_button {
   background-color: #B4E1FA;
-  height: 4rem;
-  width: 4rem;
+  height: 4.95rem;
+  width: 4.95rem;
   border-radius: 50%;
   position: fixed;
-  top: 3rem;
-  right: 4rem;
+  top: 4rem;
+  right: 4.4rem;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -25,23 +25,23 @@
       right: 3rem; } }
 
 .navigation_background {
-  height: 3rem;
-  width: 3rem;
+  height: 4.7rem;
+  width: 4.7rem;
   border-radius: 50%;
   position: fixed;
-  top: 4rem;
+  top: 4.2rem;
   right: 4.5rem;
   background-image: radial-gradient(#007cba, #0274be);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media (max-width: 56.25em) {
     .navigation_background {
-      top: 4.5rem;
-      right: 4.5rem; } }
+      top: 4.1rem;
+      right: 4.1rem; } }
   @media (max-width: 37.5em) {
     .navigation_background {
-      top: 3.5rem;
-      right: 3.5rem; } }
+      top: 3.2rem;
+      right: 3.1rem; } }
 
 .navigation_nav {
   height: 100vh;
@@ -89,11 +89,11 @@
 }
 @media (max-width: 56.25em) {
  .navigation_link:link, .navigation_link:visited{
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     } }
   @media (max-width: 37.5em) {
    .navigation_link:link, .navigation_link:visited  {
-     font-size: 2rem; }}
+     font-size: 2.5rem; }}
 .navigation_checkbox:checked ~ .navigation_background {
   transform: scale(80); }
 
@@ -104,12 +104,12 @@
 
 .navigation_icon {
   position: relative;
-  margin-top: 2rem; 
+  margin-top: 2.5rem; 
   color:#55AAD6;
 }
   .navigation_icon, .navigation_icon::before, .navigation_icon::after {
     height: 2px;
-    width: 2rem;
+    width: 2.5rem;
     display: inline-block;
     background-color: #333; }
   .navigation_icon::after, .navigation_icon::before {
@@ -118,9 +118,9 @@
     left: 0;
     transition: all .2s; }
   .navigation_icon::before {
-    top: -.6rem; }
+    top: -.9rem; }
   .navigation_icon::after {
-    top: .6rem; }
+    top: .9rem; }
 
 .navigation_button:hover .navigation_icon::before {
   top: -.7rem; }

@@ -217,7 +217,7 @@ body {
 }
 
 .about-container {
-	padding: 25rem 0;
+	padding: 12rem 0;
 	font-size: 2.2rem;
 	text-align: center;
 }
@@ -254,7 +254,7 @@ body {
 	background-color: #55aad6;
 }
 .carousel.slide {
-	padding: 18rem 0;
+	padding: 8rem 0;
 }
 .carousel-slide {
 	margin: 0 auto;
@@ -317,7 +317,7 @@ body {
 }
 #events {
 	position: relative;
-	padding: 5rem 5rem;
+	padding: 0rem 5rem;
 }
 
 .events-heading {
@@ -340,7 +340,7 @@ body {
 	background-color: #55aad6;
 }
 .event-container {
-	padding: 20rem 0;
+	padding: 12rem 0;
 }
 .event:not(:last-child) {
 	margin-bottom: 6rem;
@@ -523,7 +523,7 @@ h4 {
 	background-color: #55aad6;
 }
 .swiper-container {
-	padding: 15rem 0;
+	padding: 10rem 0;
 	position: relative;
 }
 .swiper-slide {
@@ -566,10 +566,43 @@ h4 {
 	font-size: 3rem;
 }
 .swiper-button-prev {
+	left: 50px;
 }
 .swiper-button-next {
 	left: 50px;
 }
-footer {
-	font-size: 2rem;
-}
+/****************************************** footer ******************************************/
+.footer{
+	text-align: center;
+	padding: 50px;
+	padding-bottom: 10px;
+	width: 100%;
+	background-color: #f9f9f9;
+  }
+  .footer-p1{
+	width: 70%;
+	margin:0 auto;
+	color: #A4A4A4;
+  }
+  .footer>hr{
+	margin: 20px auto;
+	width: 90%;
+	border-top: 1px solid #EFEFEF;
+  }
+  .social-icons > i{
+	margin: 10px 5px;
+	border-radius: 50%;
+	padding: 5px;
+	color: #fff;
+	background-color: #C4C4C4;
+  }
+  .footer-p2{
+	margin-top: 30px;
+	color: #A4A4A4;
+  }
+  @media screen and (max-width:450px){
+	.footer{
+	  padding: 30px 10px;
+	}
+  }
+  

@@ -76,7 +76,7 @@
   font-weight: 300;
   padding: 1rem 2rem;
   background-size: 220%;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-image: linear-gradient(100deg, transparent 0%, transparent 50%, #fff 50%);
   transition: all .4s; }
   .navigation_link:link span, .navigation_link:visited span {
     display: inline-block;

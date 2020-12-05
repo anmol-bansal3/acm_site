@@ -81,9 +81,14 @@ header img {
 
 .text h1 {
   font-size: 48px;
-  margin-bottom: 1em;
+  margin-bottom: 0.75em;
 }
 
+@media (max-width: 56.25em) {
+  .text {
+    top: 50%;
+  }
+}
 /* #hamburger {
 	height: 60px;
 	width: 60px;

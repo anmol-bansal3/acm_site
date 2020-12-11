@@ -1,6 +1,3 @@
-body{
-  overflow-x: hidden;
-}
 /****************************************** navbar ******************************************/
 
 .navigation_checkbox {
@@ -134,7 +131,7 @@ body{
   transform: rotate(-135deg); }
 /****************************************** artile ******************************************/
 #toppic{
-  background-image: url(../images/teambg.png);
+  background-image: url(../images/undraw_team_spirit_hrr4\ \(1\)\ 1.png);
   background-position: right;
   background-repeat: no-repeat;
   width: 100vw;
@@ -155,16 +152,12 @@ body{
   width: 25%;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   border-radius:10%;
   margin: 5% 2% 0px 5%;
   padding: 50px 0px 50px 0px;
   border-width: 2px;
-}
-.hidden{
-  text-align: right;
-  margin-right: 10%;
-  font-size: 150%;
 }
 .card:hover i{
   color:  #79daf0;
@@ -235,11 +228,8 @@ text-decoration: none;
 @media screen and (max-width:1040px){
   #toppic{
     margin-top: 10%;
-    background-image: url(../images/teambg.png);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-image: none;
+    height: auto;
   }
   #article{
     width:90vw;
@@ -253,6 +243,7 @@ text-decoration: none;
     border-width: 2px;
     width: 40%;
     margin: 2%;
+    align-items: center;
   }
 .imgd{
   background-color: #79daf0;
@@ -262,7 +253,7 @@ text-decoration: none;
   .card a i{
     color: #79daf0;
     margin: 10px;
-    font-size: 150%;
+    font-size: 100%;
     text-decoration: none;
   }
   .hidden{
@@ -286,10 +277,7 @@ text-decoration: none;
   }
 /****************************************** artile ******************************************/
   #toppic{
-    background-image: url(../images/teambg.png)
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: none;
     height: auto;
   }
   #article{
@@ -300,16 +288,13 @@ text-decoration: none;
   #article h1{
     margin: 20%;
   }
-  #article p{
-    width: 80vw;
-    margin: auto;
-  }
 /****************************************** card ******************************************/
   .card{
     border-color:#79daf0;
     border-width: 2px;
     width: 80%;
     margin: 10%;
+    align-items: center;
   }
 .imgd{
   background-color: #79daf0;
@@ -319,7 +304,7 @@ text-decoration: none;
   .card a i{
     color: #79daf0;
     margin: 10px;
-    font-size: 150%;
+    font-size: 100%;
     text-decoration: none;
   }
   .hidden{

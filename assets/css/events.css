@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+html {
+	font-size: 62.5%;
+}
+@media (max-width: 75em) {
+	html {
+		font-size: 56.25%;
+	}
+}
+@media (max-width: 56.25em) {
+	html {
+		font-size: 50%;
+	}
+}
 body {
 	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
@@ -40,26 +60,26 @@ body {
 	background-color: #55aad6;
 }
 
-.upcoming-events-lists{
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 28px;
-  text-transform: capitalize;
-
+.upcoming-events-lists {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 28px;
+	text-transform: capitalize;
 }
-.upcoming-events-ulist{
-  text-align: center;
-  list-style-type: none;
+.upcoming-events-ulist {
+	text-align: center;
+	list-style-type: none;
 }
 /* previous-events */
 #previous-events {
 	overflow-x: hidden;
 	position: relative;
 	padding: 5rem 5rem;
+	background-color: #00a5ec;
 }
-.previous-events-heading{
+.previous-events-heading {
 	float: right;
 	color: #003e6b;
 	text-transform: uppercase;
@@ -76,6 +96,170 @@ body {
 	top: 50%;
 	width: 15rem;
 	height: 3px;
-	background-color: #55aad6;
+	background-color: #ffffff;
+}
+.previous-event-container {
+	margin: 20rem 0;
+}
+.list-group-item,
+.list-group-item:active,
+.list-group-item:hover {
+	background: transparent !important;
+	border: none;
+	outline: none;
+	font-size: 1.8rem;
 }
 
+.list-group-item-action {
+	margin-left: 100px;
+	position: relative;
+}
+
+.list-group-item-action::before {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 4rem;
+	background-color: #dbdbdb;
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	transform: translate(-100%, -50%);
+}
+.list-group-item-action::after {
+	content: "";
+	display: block;
+	height: 20rem;
+	width: 1px;
+	background-color: #bfbfbf;
+	position: absolute;
+	left: -35px;
+	top: 50%;
+	transform: translate(-100%, 0);
+}
+.list-group-item-action.active {
+	margin-left: 120px;
+}
+.list-group-item-action.active::before {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 6rem;
+	background-color: #dbdbdb;
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	transform: translate(-100%, -50%);
+}
+.list-group-item-action.active::after {
+	content: "";
+	display: block;
+	height: 20rem;
+	width: 1px;
+	background-color: #bfbfbf;
+	position: absolute;
+	left: -55px;
+	top: 50%;
+	transform: translate(-100%, 0);
+}
+.swiper-slide {
+	background-color: white;
+	height: 40rem;
+	width: 30rem !important;
+	border-radius: 1.7rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 20px;
+}
+.swiper-slide img {
+	width: 25rem;
+}
+.des {
+	font-size: 2.2rem;
+	font-weight: 700;
+	color: #003e6b;
+	text-align: center;
+}
+.name {
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: #636363;
+}
+.arrow {
+	position: absolute;
+	top: 0;
+	right: 100px;
+}
+.swiper-button {
+	position: absolute;
+	top: 30px;
+	padding: .5rem 1rem;
+	color: black;
+	background-color: #e0f1f9;
+}
+.swiper-button::after {
+	font-size: 3rem;
+}
+/* .swiper-button-prev {
+	left: 50px;
+} */
+.swiper-button-next {
+	left: 50px;
+}
+.header-img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+	.list-group-item-action::before {
+		left: 0;
+	}
+
+	.list-group-item-action.active::before {
+		left: -2px;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.list-group-item-action::before {
+		left: -2px;
+	}
+
+	.list-group-item-action.active::before {
+		left: -8px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.list-group {
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 5rem;
+	}
+	.list-group-item {
+		margin-left: 0 !important;
+		text-align: center;
+	}
+	.list-group-item-action::before {
+		display: none;
+	}
+
+	.list-group-item-action.active::before {
+		display: none;
+	}
+	.list-group-item-action::after {
+		display: none;
+	}
+
+	.list-group-item-action.active::after {
+		display: none;
+	}
+	#header div {
+		padding: 0 25px;
+		text-align: justify;
+	}
+}
+footer {
+	font-size: 1.8rem;
+}

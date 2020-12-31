@@ -47,19 +47,23 @@ ion-icon {
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4);
     z-index: 10;
     transition: all .2s;
-    outline-offset: 2rem; 
+    outline-offset: 0.8rem; 
 }
 .composition_photo--p1 {
     top: 0rem;
-    left: 0; 
+    left: 1rem; 
 }
 .composition_photo--p2 {
     top: 3rem;
-    right: 0;
+    right: 1rem;
  }
 .composition_photo--p3 {
-    top: 11rem;
+    top: 9rem;
     left: 20%; 
+}
+.composition_photo--p4{
+	left: 20%;
+	top: 3rem;
 }
 .composition_photo:hover {
     transform: scale(1.01);
@@ -83,3 +87,8 @@ ion-icon {
 		height: 220px;
 	 }
  }
+ @media only screen and (max-width: 37.5em){
+.back_button {
+    top: 3rem;
+    right: 3rem;
+}}

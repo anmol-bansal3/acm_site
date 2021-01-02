@@ -6,7 +6,7 @@ body {
 }
 
 .navigation{
-  padding: 10rem 0rem;
+  padding: 10rem 0rem 6rem 0rem;
 }
 #header > div > h1 {
 	text-transform: uppercase;
@@ -17,24 +17,29 @@ body {
 #header > div > p {
 	font-size: 1.8rem;
 }
-.back_button {
-	background-color: #B4E1FA;
-	height: 4.95rem;
-	width: 4.95rem;
-	border-radius: 50%;
-	position: fixed;
-	top: 4rem;
-	left: 4.4rem;
-	z-index: 2000;
-	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-	text-align: center;
-	cursor: pointer; 
-}
+
 ion-icon {
 	font-weight: 2px;
 	color: black;
 	padding: 8px 2px;
  }
+
+#more {
+	display: none;
+}
+
+.moreBtn{
+	background-color: #b4e1fa;
+}
+
+.detail{
+	font-size: 1.8rem;
+	margin-bottom: 10px;
+}
+.detail p{
+	padding: 0px 10px;
+}
+
 /*******************/
 /* landing photos */
 /*******************/
@@ -61,10 +66,6 @@ ion-icon {
     top: 9rem;
     left: 20%; 
 }
-.composition_photo--p4{
-	left: 20%;
-	top: 3rem;
-}
 .composition_photo:hover {
     transform: scale(1.01);
     box-shadow: 0 2.5rem 2rem rgba(0, 0, 0, 0.5);
@@ -80,15 +81,16 @@ ion-icon {
  @media only screen and (min-width: 768px) and (max-width: 991px){
 	.composition {
 		height: 400px;
+		margin-top: 25px;
 	 }
  }
  @media only screen and (min-width: 320px) and (max-width: 550px){
 	.composition {
-		height: 220px;
+		height: 240px;
+		margin-top: 25px;
+	 }
+	 .navigation{
+		 padding: 10rem 0rem 5rem 0rem;
 	 }
  }
- @media only screen and (max-width: 37.5em){
-.back_button {
-    top: 3rem;
-    right: 3rem;
-}}
+

@@ -28,10 +28,6 @@ ion-icon {
 	display: none;
 }
 
-.moreBtn{
-	background-color: #b4e1fa;
-}
-
 .detail{
 	font-size: 1.8rem;
 	margin-bottom: 10px;
@@ -39,7 +35,38 @@ ion-icon {
 .detail p{
 	padding: 0px 10px;
 }
-
+.hr-text {
+	line-height: 1em;
+	position: relative;
+	outline: 0;
+	border: 0;
+	color: black;
+	text-align: center;
+	height: 1.5em;
+	opacity: 0.8;
+	margin-top: 0px;
+	box-shadow: 0px -5px 35px 30px #fff;
+  }
+  .hr-text:before {
+	content: "";
+	background: linear-gradient(to right, transparent, #818078, transparent);
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 1px;
+  }
+  .hr-text:after {
+	content: attr(data-content);
+	position: relative;
+	display: inline-block;
+	color: black;
+	padding: 0 0.5em;
+	line-height: 1.5em;
+	color: black;
+	/* font-weight: bold; */
+	background-color: #fcfcfa;
+  }
 /*******************/
 /* landing photos */
 /*******************/
@@ -94,7 +121,9 @@ ion-icon {
 	 }
  }
 
-/* slick  */
+ /*******************/
+/* slick lightbox */
+/*******************/
  body.modal-open {
 	overflow: hidden;
 	position: fixed;
@@ -128,7 +157,7 @@ ion-icon {
   
   .popup-slider-for {
 	position: relative;
-	min-height: 300px;
+	/* min-height: 300px; */
 	z-index: 2;
   }
   
@@ -158,18 +187,6 @@ ion-icon {
 	}
   }
   
-  .popup-slider-for:after {
-	content: "\e030";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-animation: spin 1s linear infinite;
-	animation: spin 1s linear infinite;
-	z-index: -1;
-	color: #fff;
-	opacity: .75;
-  }
-  
   .popup-slider-for,
   .main-image {
 	text-align: center;
@@ -178,8 +195,8 @@ ion-icon {
   
   .popup-slider-for .slick-slide img {
 	display: inline-block;
-	max-width: 100%;
-	vertical-align: middle;
+	max-width: 80%;
+	vertical-align: middle ;
   }
   
   .popup-slider-nav .thumbnail-image {
@@ -265,13 +282,13 @@ ion-icon {
   
   .close-btn {
 	background-color: transparent;
-	color: #fff;
+	color:#fff;
 	position: absolute;
 	right: 30px;
 	z-index: 3;
-	font-size: 24px;
+	font-size: 2.5rem !important;
 	margin: 0;
-	opacity: .75;
+	opacity: .8;
   }
   
   .close-btn:hover,

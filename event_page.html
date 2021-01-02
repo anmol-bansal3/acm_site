@@ -27,7 +27,7 @@
             <span class="navigation_icon">&nbsp;</span>
 		</label>
 		
-        <div class="navigation_background">&nbsp;</div>
+      <div class="navigation_background">&nbsp;</div>
         <nav class="navigation_nav">
             <ul class="navigation_list">
                 <li class="navigation_item"><a href="index.html" class="navigation_link">Home</a></li>
@@ -48,63 +48,55 @@
                         The competition was tough and teams proved their “coding skills” with great zeal. First position was bagged by Kartik Gandhi and Kashish Singal of CSE 2nd year and 2nd position was bagged by the team of Harshpreet Kaur and Isha Saxena of CSE 2nd year.
                     </p>
                 </div>
-                <div class="col-md-6">
-                    
-					<div class="composition">
-                        <img src="/assets/images/img-20.jpg" alt="photo 1" class="composition_photo composition_photo--p1">
-                        <img src="/assets/images/img-21.jpg" alt="photo 2" class="composition_photo composition_photo--p2">	
-                        <img src="/assets/images/img-23.jpg" alt="photo 3" class="composition_photo composition_photo--p3">     
+                <div class="col-md-6">  
+					        <div class="composition">
+                        <img src="./assets/images/img-20.jpg" alt="photo 1" class="composition_photo composition_photo--p1">
+                        <img src="./assets/images/img-21.jpg" alt="photo 2" class="composition_photo composition_photo--p2">	
+                        <img src="./assets/images/img-23.jpg" alt="photo 3" class="composition_photo composition_photo--p3" data-toggle="modal" data-target="#popup-image-gallery" tabindex="0">     
                     </div>      
-                    
-                    
-				</div>
-            </div>
-        </div>
-    </div>
-    
-      <div class="container">
-        <a href="#" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#popup-image-gallery" tabindex="0">
-      Click to view Thumbnail  images gallery in lightbox
-      </a>
+                </div>
+              </div>
+          </div>
       </div>
-      <div class="modal popup-image-gallery" id="popup-image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    
+      <div class="modal popup-image-gallery" id="popup-image-gallery" tabindex="-1" role="dialog"         aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body">
               <button type="button" class="btn close-btn" title="Close" data-dismiss="modal" aria-label="Close">&#10006;</span></button>
               <div class="popup-slider-for">
                 <div class="main-image">
-                  <img src="https://unsplash.it/340/?random" alt="">
+                  <img src="./assets/images/img-20.jpg" alt="">
                 </div>
                 <div class="main-image">
-                  <img src="https://unsplash.it/360/?random" alt="">
+                  <img src="./assets/images/img-21.jpg" alt="">
                 </div>
                 <div class="main-image">
-                  <img src="https://unsplash.it/380/?random" alt="">
+                  <img src="./assets/images/img-22.jpg" alt="">
                 </div>
                 <div class="main-image">
-                  <img src="https://unsplash.it/400/?random" alt="">
+                  <img src="./assets/images/img-23.jpg" alt="">
                 </div>
                 <div class="main-image">
-                  <img src="https://unsplash.it/420/?random" alt="">
+                  <img src="./assets/images/img-24.jpg" alt="">
                 </div>
               </div>
               <h5 class="pagingInfo"></h5>
               <div class="popup-slider-nav hidden-xs">
                 <div class="thumbnail-image">
-                  <img src="https://unsplash.it/340/?random" alt="">
-                </div>unsplash.it
-                <div class="thumbnail-image">
-                  <img src="https://unsplash.it/360/?random" alt="">
+                  <img src="./assets/images/img-20.jpg" alt="">
                 </div>
                 <div class="thumbnail-image">
-                  <img src="https://unsplash.it/380/?random" alt="">
+                  <img src="./assets/images/img-21.jpg" alt="">
                 </div>
                 <div class="thumbnail-image">
-                  <img src="https://unsplash.it/400/?random" alt="">
+                  <img src="./assets/images/img-22.jpg" alt="">
                 </div>
                 <div class="thumbnail-image">
-                  <img src="https://unsplash.it/420/?random" alt="">
+                  <img src="./assets/images/img-23.jpg" alt="">
+                </div>
+                <div class="thumbnail-image">
+                  <img src="./assets/images/img-24.jpg" alt="">
                 </div>
               </div>
             </div>
@@ -118,10 +110,10 @@
             <span id="more">The first round ”Word cloud” involved participants searching for technical terms from a collection of 4 different images in a time span of 5 minutes. Only 17 out of 22 teams managed to cross the first hurdle. The second round ”PhotoRumble”  in which collage of four pictures were shown and they have to write their own story. This time just 10 teams managed to progress to the final round. The round three “Luck By chance” involved the remaining participating teams to pick out a slip, which contained the topic on which they will be getting coding questions on. Out of total 6 questions, the teams had to solve the maximum questions in 45 minutes.
          The competition was tough and teams proved their “coding skills” with great zeal. First position was bagged by Kartik Gandhi and Kashish Singal of CSE 2nd year and 2nd position was bagged by the team of Harshpreet Kaur and Isha Saxena of CSE 2nd year.</span>
         </p>
-        <button onclick="myFunction()" id="myBtn" class="btn moreBtn">Read more</button>
+        <hr class="hr-text" data-content="Read More" onclick="myFunction()" id="myBtn">
     </div>
     
-
+    <!-- Footer -->
 		<footer class="footer">
 				<p class="footer-p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non laboriosam dolor commodi sequi eligendi provident, temporibus quaerat reiciendis beatae? Obcaecati!</p>
 				<hr>
@@ -149,6 +141,7 @@
 
         <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <!-- script for read more -->
         <script>
             function myFunction() {
@@ -158,18 +151,22 @@
             
               if (dots.style.display === "none") {
                 dots.style.display = "inline";
-                btnText.innerHTML = "Read more"; 
+                btnText.setAttribute("data-content","Read More"); 
                 moreText.style.display = "none";
+                btnText.style.boxShadow="0px -5px 35px 30px #fff";
               } else {
                 dots.style.display = "none";
-                btnText.innerHTML = "Read less"; 
+                btnText.setAttribute("data-content","Read Less"); 
                 moreText.style.display = "inline";
+                btnText.style.boxShadow="none";
               }
             }
             </script>
             <!-- slick controls -->
             <script>
                 $('#popup-image-gallery').on('shown.bs.modal', function() {
+                $(".navigation_button").css("display","none");
+                $(".navigation_background").css("display","none");
                 $('.popup-slider-for').slick({
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -207,6 +204,18 @@
                 $('.popup-slider-nav .slick-current').removeClass('slick-current');
                 $('.popup-slider-nav .slick-slide[data-slick-index="' + inFocus + '"]').trigger('click');
                 });
+
+                $(".close-btn").click(function () {
+                $(".navigation_button").css("display", "block");
+                $(".navigation_background").css("display", "block");
+              });
+
+              $(document).keyup(function (e) {
+                if (e.keyCode == 27) {
+                  $(".navigation_button").css("display", "block");
+                  $(".navigation_background").css("display", "block");
+                }
+              });
             </script>
 </body>
 

@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Gallery</title>
-</head>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
 	integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
 	crossorigin="anonymous" />
@@ -14,29 +14,12 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<!-- <style>
-	#header>div>p {
-		font-size: medium;
-		letter-spacing: 1px;
-		font-size: 18px;
-		line-height: 30px;
-	}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+<style>
 
-	#header>div>h1 {
-		margin-bottom: 40px;
-	}
-
-	#header {
-		margin-top: 180px;
-	}
-
-	@media(max-width: 991px) {
-		#header>div>img {
-			margin-top: 70px;
-		}
-	}
-</style> -->
-
+</style>
+</head>
 <body>
     <div class="container-fluid navigation">
         <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
@@ -78,6 +61,56 @@
             </div>
         </div>
     </div>
+    
+      <div class="container">
+        <a href="#" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#popup-image-gallery" tabindex="0">
+      Click to view Thumbnail  images gallery in lightbox
+      </a>
+      </div>
+      <div class="modal popup-image-gallery" id="popup-image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="btn close-btn" title="Close" data-dismiss="modal" aria-label="Close">&#10006;</span></button>
+              <div class="popup-slider-for">
+                <div class="main-image">
+                  <img src="https://unsplash.it/340/?random" alt="">
+                </div>
+                <div class="main-image">
+                  <img src="https://unsplash.it/360/?random" alt="">
+                </div>
+                <div class="main-image">
+                  <img src="https://unsplash.it/380/?random" alt="">
+                </div>
+                <div class="main-image">
+                  <img src="https://unsplash.it/400/?random" alt="">
+                </div>
+                <div class="main-image">
+                  <img src="https://unsplash.it/420/?random" alt="">
+                </div>
+              </div>
+              <h5 class="pagingInfo"></h5>
+              <div class="popup-slider-nav hidden-xs">
+                <div class="thumbnail-image">
+                  <img src="https://unsplash.it/340/?random" alt="">
+                </div>unsplash.it
+                <div class="thumbnail-image">
+                  <img src="https://unsplash.it/360/?random" alt="">
+                </div>
+                <div class="thumbnail-image">
+                  <img src="https://unsplash.it/380/?random" alt="">
+                </div>
+                <div class="thumbnail-image">
+                  <img src="https://unsplash.it/400/?random" alt="">
+                </div>
+                <div class="thumbnail-image">
+                  <img src="https://unsplash.it/420/?random" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <div class="container detail">
         <!-- complete description of the event -->
         <p>ACM Student Chapter,  Chitkara University organized a half day fun cum technical event titled “ENiGMA” on 2nd February, 2017,  in which 22 teams partcipated. The event consisting of three rounds tested students on visual, creative and technical level and helped in bringing out the best in them.
@@ -115,6 +148,7 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
         <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
         <!-- script for read more -->
         <script>
             function myFunction() {
@@ -132,6 +166,47 @@
                 moreText.style.display = "inline";
               }
             }
+            </script>
+            <!-- slick controls -->
+            <script>
+                $('#popup-image-gallery').on('shown.bs.modal', function() {
+                $('.popup-slider-for').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    fade: true,
+                    asNavFor: '.popup-slider-nav',
+                    // adaptiveHeight: true,
+                });
+                $('.popup-slider-nav').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    asNavFor: '.popup-slider-for',
+                    dots: false,
+                    arrows: false,
+                    focusOnSelect: true,
+                    variableWidth: true,
+                    centerMode: true,
+                    infinite: true,
+                });
+                });
+                // Slick.js: Get current and total slides (ie. 3/5)
+                var $status = $('.pagingInfo');
+                var $slickElement = $('.popup-slider-for');
+
+                $slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide) {
+                //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+                var i = (currentSlide ? currentSlide : 0) + 1;
+                $status.text(i + '/' + slick.slideCount);
+                });
+
+                // Slick slider sync situation
+                var slides = $(".popup-slider-for .slick-track > .slick-slide").length;
+                $('.popup-slider-for').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+                var inFocus = $('.popup-slider-for .slick-current').attr('data-slick-index');
+                $('.popup-slider-nav .slick-current').removeClass('slick-current');
+                $('.popup-slider-nav .slick-slide[data-slick-index="' + inFocus + '"]').trigger('click');
+                });
             </script>
 </body>
 

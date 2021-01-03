@@ -3,10 +3,10 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
-	background: url('/assets/images/Vector.png');
+	/* background: url('/assets/images/Vector.png');
 	background-repeat: no-repeat ;
 	background-size: 45%;
-	background-position: top right;
+	background-position: top right; */
 }
 
 .navigation{
@@ -75,7 +75,18 @@ ion-icon {
 /* landing photos */
 /*******************/
 .composition {
-    height: 300px;
+	height: 400px;
+	overflow: visible;
+ }
+ .composition::before{
+	 content: '';
+	 display: block;
+	 height: 100%;
+	 width: 100%;
+	 background-image: url('../images/Vector.png');
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: contain;
  }
 .composition_photo {
     width: 35%;
@@ -94,8 +105,9 @@ ion-icon {
     right: 1rem;
  }
 .composition_photo--p3 {
-    top: 0rem;
-    left: 40%; 
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%); 
 }
 /* .composition_photo:hover {
     transform: scale(1.01);

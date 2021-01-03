@@ -3,6 +3,10 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
+	background: url('/assets/images/Vector.png');
+	background-repeat: no-repeat ;
+	background-size: 45%;
+	background-position: top right;
 }
 
 .navigation{
@@ -74,7 +78,7 @@ ion-icon {
     height: 300px;
  }
 .composition_photo {
-    width: 55%;
+    width: 35%;
     position: absolute;
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4);
     /* z-index: 10; */
@@ -90,8 +94,8 @@ ion-icon {
     right: 1rem;
  }
 .composition_photo--p3 {
-    top: 9rem;
-    left: 20%; 
+    top: 0rem;
+    left: 40%; 
 }
 /* .composition_photo:hover {
     transform: scale(1.01);
@@ -195,7 +199,7 @@ ion-icon {
   
   .popup-slider-for .slick-slide img {
 	display: inline-block;
-	max-width: 80%;
+	max-width: 50%;
 	vertical-align: middle ;
   }
   

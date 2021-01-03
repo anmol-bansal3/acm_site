@@ -301,20 +301,36 @@ ion-icon {
 	margin: 0;
   }
   
-  @media (max-width: 767px) {
+  @media only screen and (max-width: 767px) {
 	.popup-image-gallery .modal-body {
 	  padding: 0;
 	}
-	.popup-image-gallery .modal-dialog {
-	  margin-top: 20px;
-	}
+	
 	.popup-image-gallery .close-icon {
 	  top: -20px;
 	}
 	.popup-slider-for .slick-prev {
-	  left: 12px;
+	  left: 5px;
+	  margin-top:7px; 
 	}
 	.popup-slider-for .slick-next {
-	  right: 12px;
+	  right: 5px;
+	  margin-top: 7px;
 	}
   }
+  @media only screen and (min-width: 320px) and (max-width:425px){
+	.popup-image-gallery .modal-dialog {
+		margin-top: 50%;
+	  }
+	  .close-btn{
+		top: -50%;
+	  }
+  }
+  @media only screen and (min-width: 425px) and (max-width:767px){
+	.popup-image-gallery .modal-dialog {
+		margin-top: 30%;
+	  }
+	.close-btn{
+	  top: -30%;
+	}
+}

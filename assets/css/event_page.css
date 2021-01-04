@@ -89,7 +89,7 @@ ion-icon {
 	 background-size: contain;
  }
 .composition_photo {
-    width: 35%;
+    width: 40%;
     position: absolute;
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4);
     /* z-index: 10; */
@@ -126,6 +126,9 @@ ion-icon {
 		height: 400px;
 		margin-top: 25px;
 	 }
+	 .composition_photo{
+		 width: 35%;
+	 }
  }
  @media only screen and (min-width: 320px) and (max-width: 550px){
 	.composition {
@@ -135,6 +138,14 @@ ion-icon {
 	 .navigation{
 		 padding: 10rem 0rem 5rem 0rem;
 	 }
+	 .composition_photo{
+		width: 50%;
+	}
+ }
+ @media only screen and (min-width: 425px) and (max-width: 768px){
+	.composition_photo{
+		width: 40%;
+	}
  }
 
  /*******************/

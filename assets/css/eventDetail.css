@@ -85,6 +85,10 @@ ion-icon {
 /*******************/
 /* gallery lightbox */
 /*******************/
+
+.modal-body{
+   padding: 20px !important;
+}
 body.modal-open {
    overflow: hidden;
    position: fixed;
@@ -304,5 +308,30 @@ body.modal-open {
    .composition
    {
       margin-left: 154px;
+   }
+   
+}
+@media only screen and (min-width: 426px) and (max-width: 992px)
+{
+   #header > div >h1{
+      font-size: 7rem;
+   }
+   .composition_photo{
+      height: 40vh;
+   }
+   #header{
+      padding: 6rem 2rem;
+   }
+}
+@media only screen and (min-width: 300px) and (max-width: 426px){
+   
+   .composition_photo{
+      height: 35vh;
+   }
+   #header{
+      padding: 6rem 0rem;
+   }
+   #header > div >h1{
+      font-size: 6rem;
    }
 }

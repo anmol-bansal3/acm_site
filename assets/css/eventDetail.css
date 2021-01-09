@@ -341,7 +341,7 @@ body.modal-open {
     padding: 6rem 0rem;
   }
   .heading h1 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 991px) {

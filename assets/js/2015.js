@@ -49,7 +49,6 @@ const data_2015 = [
         ]
     }
 ]
-
 const data_2016 = [
     {
         name: 'HOUR OF CODE',
@@ -517,12 +516,112 @@ const data_2020 = [
         ]
     },
 ]
+const techweek_2020 = [
+    {
+        name: 'EXPERT TALK ON "WEB DEVELOPMENT: ZERO TO HERO"',
+        content: "Developer Students Club Chitkara University, in collaboration with ACM Chapter, organized an expert talk on ‘Web Development: Zero To Hero’ by Mr. Vrijraj Singh on August 17, 2020, under ‘TechWeek’ event. The key points that were covered in this talk were:<br>The web has changed drastically over the decade, with the arrival of server-side JavaScript and as a beginner, students are often confused about the correct roadmap to choose, for learning web development. Mr. Vrijraj Singh helped to enlighten the students on the subject and gave a talk on the vast possibilities and career opportunities with web development. This helped the students to have a much clear understanding of why they should pursue web development & how.<br>After the end of his talk, he held a thrilling Q&A session for about 30 mins, in which participants showed much eagerness and asked a lot of important questions. The response of the audience was amazing and we received over 400 registrations for the same, while more than 250+ attendees were present in the talk.",
+        images : [
+            './assets/2020/2020_0_0.jpg'
+        ]
+    },
+    {
+        name: 'WORKSHOP ON "UI/UX FOR WEB DEVELOPERS"',
+        content: "Developer Students Club Chitkara University, in collaboration with ACM Chapter, organized an expert talk on ‘UI/UX for web developers’ by Ishan Sharma on August 18, 2020, under ‘TechWeek’ event. The key points that were covered in this talk were :<br>How UI/UX design helps to improve the user experience and customer satisfaction, and how it is crucial for any business to thrive. How we can improve web user-experiences and take into consideration all the key factors such as performance etc. while still maintaining a beautiful and eye-pleasing design for the same, along with some basic UI Fundamentals such as Visual Hierarchy, Contrast Ratios etc.<br>Also, he also gave a workshop on of how to design/prototype a quick mockup in adobe XD, he shared some assets for the participants to follow along and initially took a very basic design and in the end improved that to something appealing.<br>After the end of his talk, he held a Q&A session for about 15 mins, in which participants showed much eagerness and asked a lot of questions. The response of the audience was amazing and we received over 350 registrations for the same, while more than 250+ attendees were present in the workshop.",
+        images : [
+            './assets/2020/2020_0_0.jpg'
+        ]
+    },
+    {
+        name: 'WEB-O-MANIA',
+        content: "Web-O-Mania is a Web theme-based website making Competition in which participants will be making websites or single page application based on given themes. Websites Will be judged by our student Coordinators – Anmol and Samridhi with our honourable judge Ms Navjeet Kaur Event Details:- Website making theme competition Web-o-Mania was conducted on 20th August 2020 by ACM Student Chapter along with Developers Student Club under ‘Techweek2020’<br>Highlights of event:- Participants were given four topics among which they had to make a theme based website for the topics. Topics were:<br><ol><li>Covid-19</li><li>LGBT community</li><li>Black lives matter</li><li>National education Policy</li> </ol><br>Themes covered major current social issues Websites were evaluated on basis of their UI/UX, fresh idea, best content, functionality and responsiveness of website Participants were given a small lecture about github and rules and regulations of the competition on Google meet where they interacted with student coordinators and cleared there doubt…",
+        images : [
+            './assets/2020/2020_0_0.jpg'
+        ]
+    },
+    {
+        name: 'TECHQUIZ',
+        content: "Technology has become chaotic and unpredictable. In order to embrace it and to ensure the effective use of technology and its knowledge, Chitkara ACM Student chapter conducted a ‘TECHQUIZ’ under ‘TECHWEEK2020’ organised by Prepbytes. There were 45 basic questions related to computer languages and operations. Almost 388 participated and gave their best. It had a score analyzer at the end of the quiz where participants got to know about their right and wrong quest percentages. All the participants found this quiz to be a great exercise and got a hold to brush up their basic knowledge.<br>The results for the quiz are:<br>Winner: Sahildeep Singh<br>1st runner-up: Aayush Garg<br>2nd runner-up: Pranjal Mohla<br>With the combined efforts of the ‘TechWeek2020’ team, the event was well embraced with positive responses.",
+        images : [
+            './assets/2020/2020_0_0.jpg'
+        ]
+    },
+    {
+        name: 'SUBMISSION IMPOSSIBLE',
+        content: "Developer Student Clubs, Chitkara University, in collaboration with Coding Blocks, organised a Coding Contest for the “Tech Week 2020”.<br>The event was a huge success. A lot of students took part in it and got a chance to strengthen their Data Structures and Algorithms knowledge and at the same time show off their problem-solving skills by bagging the top positions in the leaderboard.",
+        images : [
+            './assets/2020/2020_0_0.jpg'
+        ]
+    },
+    {
+        name: 'Workshop on Robotic Process Automation',
+        content: "CHITKARA ACM Student Chapter Successfully conducted another workshop under TECHWEEK 2020 on 22nd of August, 2020. The workshop was full of knowledge, information relating Robotic Process Automation or RPA. Robotic process automation is a form of business process automation technology based on metaphorical software robots(bots) or on artificial intelligence (AI) workers. In the workshop Mr. Vivek Bhardwaj, a certified RPA professional and trainer spoke about what is RPA, how does it work, how does it prepare you for the industries. He taught automation of 2 bots through automation anywhere. He in the workshop, helped attendees make bots themselves. 2 hours of such an interactive session is a success itself. There is no value available to the exposure that these workshops give you about the future of industries. RPA is one of the most in-demand and highly paid skills in today’s world and we provided certificates to all participants. With the help of all participants and combined efforts of the complete ACM team, the event was an interactive one. The response has been beyond expectations…",
+        images : [
+            './assets/2020/2020_0_0.jpg'
+        ]
+    },
+    {
+        name: 'Python and its outlook in the industry',
+        content: "The ACM student chapter organized a virtual expert talk on “Python and its outlook in the industry” on August 20,2020. Python is used successfully in thousands of real-world applications and serving millions of users worldwide. It is an interpreted, object-oriented, high-level programming language with dynamic semantics. The expert talk was organized under TECHWEEK 2020 and delivered by Mr. Saurabh Badhwar, Senior Software Engineer (LinkedIn). The talk covered various aspects briefing about the real concept of python, career prospects, software industry and skill development through a series of example giving a glass clear explanation to all attendants of the event. He emphatically stressed on the need of learning and acquiring the command over emerging languages. Students were also inquisitive to know the scope and implication of the language. The mid-session invited doubts, queries related to industry application of python, machine learning and Django which were answered satisfactorily by the expert. The talk received an overwhelming response and students learnt many aspects in an effective way. The event was surely a success due to the efforts of the acm family.",
+        images : [
+            './assets/2020/2020_0_0.jpg'
+        ]
+    },
+    {
+        name: 'Getting into Data Structures and Algorithms',
+        content: "ACM Student Chapter Chitkara University organised a webinar on ‘DS-Algo’ under teckweek 2020 on 22nd August, 2020. Mr. Gaurav Chandak was invited as the special guest for the event. He is an alumnus of NIT Durgapur and is well profound Software Engineer who has previously worked with efficient companies like Flipkart and Microsoft. It was a two-hour session in which number of students participated. Students gained a lot of knowledge about fundamental concepts of dsa, intermediate dsa, advanced dsa and a lot more knowledge. He told us about the importance of intermediate dsa for interviews and also answered the queries of students calmly and efficiently. It was truely an amazing session and ACM Society with their hard work and mind-blowing coordination skills made the event successful.",
+        images : [
+            './assets/2020/2020_0_0.jpg'
+        ]
+    },
 
+]
+const wwis_2020 = [
+    {
+        name: 'WWIS 1.0',
+        content: "Department of Computer Science and Engineering in association of Chitkara ACM Student Chapter organized a webinar series “WEDNESDAY WISDOM: INDUSTRY SERIES (WWIS)” every Wednesday from May 13, 2020 to June 10, 2020 at GoToWebinar. Each day a new eminent and proficient expert from all over the India comes and takes the webinar, providing a clear prospective on different topics to all the listeners. On 13th may for WWIS 1.0, one of the prestigious and eminent personalities “Ms. Hema Mohandas” delivered the session. She is the Vice president of Human Resources at Virtusa, Head of Talent Development-Asia. She is a well-known information technology services provider with a global reach having more than 20 years of experience in HR which includes business partnering, business integration and employee engagement.  She illustrated the topic ’Learning in new Normal’. She focused on why it is important for a student to develop hard skills and soft skills for jumping into the pool of dynamic changing technologies.  The key point of the session was ‘it is important to get into the habit of absorption to growing technologies’. Students from many colleges all over India attended this session.  WWIS 1.0 proved to very helpful to all the listeners’.",
+        images : [
+            './assets/2020/2020_0_0.jpg'
+        ]
+    },
+    {
+        name: 'WWIS 2.0',
+        content: "CHITKARA ACM STUDENT CHAPTER organized a webinar series “WEDNESDAY WISDOM: INDUSTRY SERIES (WWIS)” every Wednesday from May 13, 2020 to June 10, 2020 at GoToWebinar. Each day a new eminent and proficient expert from all over the India comes and takes the webinar, providing a clear prospective on different topics to all the listeners.<br>On 20th may which is the second day of the series,talent acquisition professional “Mr.Aditya Pal Singh” delivered the session. He is the Director-Head Talent Acquisition India at Informatica, Senior Specialist AVP Talent Acquisition at Accenture and also Senior Manager –Talent Acquisition for India and USA. Moreover, he is Client Manager-HR & finance Practice /EPI at ABC Consultants. With responsibility for designing and deploying Informatica’s Talent Acquisition Strategy to meet the talent growth needs across India, he has been spanning the entire gamut of Talent Acquisition over 19 years.<br>He discussed “Impacts of Future Workforce”. He stated the emerging importance to be a part of workforce as an individual over the years. He also discussed how the organizations have to change the policies according to workforce and what challenges employers face while engaging with employees. He also highlighted the key skills of future like ability to solve complex problems, creativity, emotional intelligence, cognitive flexibility. With the growing digital technologies he explained how the demand of people to acquire new skills is very high and how can we cope with this. Students from many colleges all over India attended this session. He elegantly answered the queries aroused by the keen students.<br>The second day of WWIS proved to very helpful to all the listeners’ .This session was successful due to mutual cooperation of the ACM team.",
+        images : [
+            './assets/2020/2020_0_0.jpg'
+        ]
+    },
+    {
+        name: 'WWIS 3.0',
+        content: "CHITKARA ACM STUDENT CHAPTER organized a webinar series “WEDNESDAY WISDOM: INDUSTRY SERIES (WWIS)” every Wednesday from May 13, 2020 to June 10, 2020 at GoToWebinar. Each day a new eminent and proficient expert from all over the India comes and takes the webinar, providing a clear prospective on different topics to all the listeners.<br>On 27th may which is at WWIS 3.0, a very skillful acquaintance ‘Mr.Shailesh Kumar’ Senior Manager Staffing – Head of University Relations and Recruitment Manager at Qualcomm delivered the session. He has rich experience in recruiting for high-end technical skills. He gave a talk on “What do we expect from IT Graduates”. He explained that only bookish knowledge is not necessary for being successful in this corporate world. Soft skills like supportive attitude, self-analysis, knowledge sharing, empathy, less sense of entitlement are equally required for establishing surviving in this corporate world.<br>Students from many colleges all over India attended this session.He elegantly answered the queries aroused by the keen students.The third day of WWIS also proved to very helpful to all the listeners’ .This session was successful due to mutual cooperation of the ACM team.",
+        images : [
+            './assets/2020/2020_0_0.jpg'
+        ]
+    },
+    {
+        name: 'WWIS 4.0',
+        content: "CHITKARA ACM STUDENT CHAPTER organized a webinar series “ WEDNESDAY WISDOM: INDUSTRY SERIES (WWIS)” every Wednesday from May 13, 2020 to June 10, 2020 at GoToWebinar. Each day a new eminent and proficient expert from all over the India comes and takes the webinar, providing a clear prospective on different topics to all the listeners.On 27th may which is at WWIS 4.0, a very talented IT expert and  Eminent speaker “Mr. Sumantha Guha“Campus Lead and Country Manager, Seimens delivered the session. He spoke on” Interviewing Skills and Emerging Skill sets in the IT Industry”. He disclosed the secrets to crack the interviews and the ground criteria of interviewers to choose the interviewees. He explained how honesty, good resumes, technical depth knowledge and culture fit are the most important points to be kept in mind in this volatile, uncertain, complex and ambiguous (VUCA) technical era. Students from many colleges all over India attended this session.  He elegantly answered the queries aroused by the keen students. The third day of WWIS also proved to very helpful to all the listeners’ .This session was successful due to mutual cooperation of the ACM team.",
+        images : [
+            './assets/2020/2020_0_0.jpg'
+        ]
+    },
+    {
+        name: 'WWIS 5.0',
+        content: "Department of Computer of Science and Engineering in association with ACM Student Chapter,  organized WWIS 5.0 (Wednesday Wisdom Industry Series) webinar on 3rd June 2020. The Speaker of the webinar was Mr. Kaviarasu Venu. He is working as Associate Director at Mindtree Ltd. He has 15+ years of experience in both IT and academies. The topic of the webinar was “Cloud Computing and Its Impact in the industry”. Around 225 students participated in this webinar. Mr. Venu discussed the concept of cloud computing, its type, and its application in the industry.A highly interactive session ends up with an active level of participation from the students and the faculty members with real-life examples. The audience gained a lot of knowledge and exposure of cloud, different levels of cloud, and its importance.",
+        images : [
+            './assets/2020/2020_0_0.jpg'
+        ]
+    },
+    {
+        name: 'WWIS 6.0',
+        content: "Another successful webinar under Wednesday Wisdom Industry Series, organized by department of computer science and engineering in association with ACM student chapter. Speaker of the Webinar was Mr. Mir Raza, Technology Recruitment Specialist (Lateral & Campus) GO-JEK Technology, he covered “Best Practices to be good developer”. Approximate 100 student attended this session. <br>Following are the key points covered by Mr. Mir Raza:<br><ul><li>Current Industry trends</li><li>Current Status of GO-JEK</li><li>Products of GO-JEK</li><li>What we need to follow to be great developer</li><li>How to build good product for Mass users</li><li>Feature of good User Interface</li><li>How to enhance own project.</li><li>Go-JEK Project development Principle.</li></ul>",
+        images : [
+            './assets/2020/2020_0_0.jpg'
+        ]
+    },
+]
 
-function back(){
-    location.replace('events.html')
-}
 window.onload=()=>{
+    
     let data = document.location.href.split('?')[1] , tmp = data.split('=').join('&').split('&');
     let year = tmp[1],
         event = tmp[3];

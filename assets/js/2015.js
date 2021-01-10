@@ -379,140 +379,140 @@ const data_2020 = [
         name: 'DSP TALK',
         content: "Chitkara ACM Student Chapter On 29th December,2020, the Chitkara ACM Student Chapter organized a webinar on ” Unsupervised Learning in Data Mining”. Dr. Debnath Bhattacharyya Ph.D (Tech. Computer Science and Engineering) University of Calcutta, was the esteemed speaker and created an interactive session on this exuberant topic. Mr. Debnath told many things about Data Mining and explained each everything in a informative manner. What are the requirements of Clustering Algorithms,how to measure the quality of clustering and more topics in the series.<br>Defining the day, we had 245+ students attending our webinar. The participants were filled with excitement and gained valuable knowledge from the workshop. The event received tremendous positive feedback.Chitkara ACM looks forward for such more amazing sessions in the future.",
         images : [
-            './assets/2020/2020_0_0.jpg'
+            './assets/2020/2020_0_0.png'
         ]
     },
     {
         name: 'HOUR OF CODE',
         content: "Chitkara ACM Student Chapter, in collaboration with the Department of Computer Science and Engineering, organized “Hour of Code”, an innovative event on December 12, 2020, from 3:00 P.M to 10:00 P.M, which emphasized relieving the week-long stress and work-load of students, with fun-induced coding sessions rather than regular ones. Getting participation from nearly 61 students, the gathering was successfully handled by the department advisors and the members of ACM. Games like Ozaria, a classroom-centered phylogeny of CodeCombat and one of the most prevalent coding games in history, and Soccer-shots were arranged, which were well apprehended by everyone.<br>Students actively reacted to the enigmas raised, as well as asked their doubts through the chat option, which were taken up by specialists. Everyone was thrilled to play the games and learn new ideas about coding au-courant. The top three performers were challenged to finish the game, which provoked activity during the culmination of the session. The concourse ended with a vote of thanks by the handling team. It was indeed an exhilarating, convivial, and enlightening session.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_1_0.jpeg'
         ]
     },
     {
         name: 'CODE INOVATION SERIES',
         content: "To enhance and explore the knowledge and potential of coders, Chitkara ACM Student Chapter in collaboration with the Department of Computer Science and Engineering organised the Code Innovation Series.Results are as follows:<br><ol><li>1st position Harshit Sharma </li><li>2nd position Om Gupta</li><li>3rd position  Meena</li></ol> <br>We would like to congratulate all the winners for nailing the task with their talent and hardwork.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_2_0.jpeg'
         ]
     },
     {
         name: 'GITHUB HANDS-ON WORKSHOP',
         content: "Chitkara ACM Student Chapter, in collaboration with the Department of Computer Science and Engineering and GitHub, organized a “Github Hands-On Workshop” to promote the idea of the “Code Innovation Series”, a unique initiative to portray the value and profits Github offers, on November 25, 2020, from 5:00 P.M to 7:00 P.M  The webinar consisted of a valuable lecture and a hands-on session by Mr. Kaushik Roy, Principal Architect, IncubateIND, who has been working in this field for a considerable time.<br>Getting a response from nearly 187 students, the session was successfully handled by the faculty advisor Mr. Sarvjeet Singh. Students actively responded to the questions raised by the host, as well as asked their doubts through the chat option. The session ended with a vote of thanks by the handling team. It was indeed exhilarating and an informative session.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_3_0.jpeg'
         ]
     },
     {
         name: 'WORKSHOP ON VEDIC MATHEMATICS',
         content: "Chitkara University Department of CSE ,ACM Student Chapter organised a three days workshop on “Vedic Mathematics”. Mr. Anuj Gupta was invited as guest speaker for the workshop who’s already taking sessions of numerical ability for placement preparation in Chitkara University. Each and everyday was full of knowledge and interaction. Students got to know about the tricks they will find beneficial for solving complex problems in the later on stages.<br>An average of 1000 students participated everyday to grab this wonderful opportunity of brushing up a spectrum of exciting and interesting themes that were being discussed as the aspects of vedic mathematics. The speaker connected the students to the basics and led them to cracking every problem into parts and solving it practically and efficiently.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_4_0.jpeg'
         ]
     },
     {
         name: 'TREE PLANTATION DRIVE',
         content: "Chitkara ACM Students Chapter in association with NSS organised “Tree Plantation Drive” on 24th of October 2020. An initiative towards the resurrection of the environment and a project idea for a better future. <br>Plants is one of those necessities which doesn’t need any advantages list to make people understand how important and beneficial it actually is. So let’s make this environment more green and plant more trees.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_5_0.jpeg'
         ]
     },
     {
         name: 'FLIP IT(OCTOBER)',
         content: "Chitkara ACM Student Chapter in collaboration with Department of Computer Science organised “Flip It” on 17th October,2020. It was a wonderful event also a great oppurtunity for the students to showcase their thinking ability. This was for first year students and a massive number of students took part in it.<br>Participants were given a topic on the spot and they had to put forward the case for their side of motion till the panelists asked them to flip it. This was indeed a magnificent way to test the presence of mind of students. The certificates were provided to the winners. One more event added to the list of successful events of ACM Student Chapter ,Chitkara University due to efforts and hard work of ACM team.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_6_0.jpeg'
         ]
     },
     {
         name: 'IDEATION CHALLENGE 2020',
         content: "Chitkara ACM Student Chapter in collaboration with Department of Computer Science and Engineering organised the Ideation Challenge 2020. The competition was an outstanding opportunity for students to turn their ideas into reality. It aimed at increasing disruptive thinking among the young generation and was held exclusively for the first year students.<br>The first round was held on 15th Oct,2020 and witnessed 186 teams. 30 teams were shortlisted for mentoring by CEED during the second round on 31st Oct, 2020. Innovation among the young minds was seen clearly during the competition. The third round held on 7th Nov,2020 shortlisted 5 teams which further moved to Startup Conclave 2020. The final round was being held on 19th Nov 2020 along with the 5 finalists who placed their ideas in the form of PPT and interacted with the jury members. Top three positions were secured by-<br><ol><li>INGREDO</li><li>Smart Dustbin</li><li>Social Profit</li></ol> <br> The event represented the face of young innovative minds threaded together to barter information and creativity through technology. Each and everyone who participated performed very well and showcased their latent talent. The event was a smashing success due to efforts of entire ACM family.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_7_0.jpeg'
         ]
     },
     {
         name: 'MENTAL HEALTH AWARENESS',
         content: "Chitkara ACM Student Chapter in association with Techfest IIT Bombay, Asia’s largest science and technology festival organised a workshop on MENTAL HEALTH AWARENESS on 26th september,2020. ‘Mental Health is not a destination but a process. It’s about how you drive, not where you are going’.<br>Ms. Karuna Khitani from NGO Nami India who is a motivational mental health speaker and has vast knowledge and experience in the field of mental wellbeing was invited to share her boundless knowledge with the students and aware each and every one about mental health. The workshop was attended by almost 180 students as they knew how important the topic is for all of us and specially at present time where we are facing outbreak of pandemic. The students sincerely put their doubts in the chat-box and Ms. Karuna answered most of them very efficiently, calmly and in an innovative manner. It was indeed a superb workshop and ACM team successfully and patiently managed the queries of the students and lead to one more successful event.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_8_0.jpeg'
         ]
     },
     {
         name: 'COVID AWARENESS AND DONATION CAMP',
         content: "We make a living by what we get, but we make a life by what we give.<br>One of simplest way to gain satisfaction from life is by dedicating time to community service. Chitkara ACM Student Chapter decided to aid those in the need of guidance and extra help. The COVID-19 pandemic is impacting life in every part of our world and we are seeing, how critical is to leverage ingenuity and strength at the local level. With our already existing networks, we planned to respond to the needs of this rapidly developing situation. It is also important to stay positive in these challenging time. We spread awareness and empower people about their role in stopping the spread of the virus. Our team distributed clothes, hand sanitisers, masks, soaps, demonstrated handwash techniques and necessary precautionary measures to many needy people. This is a tough period and we have to act responsibly, taking care of our own safety and of those around us.<br>This program impacted us in a positive manner and we discovered that serving others is an enjoyable experience. Nothing else could match the glorious feeling we got from making a small difference in the lives of these people. The combined efforts of ACM family made volunteer hours a worthwhile experience.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_9_0.jpg'
         ]
     },
     {
         name: 'FLIP IT(AUGUST)',
         content: "Let thy speech be better than silence, or be silent.<br>When a chance is being given to us to speak, they say let the words flow from the heart, in order to reach the hearts of the listeners, the words should come from the mind. So as to enhance the skills of handling immense pressure and maintaining a pace of words, Chitkara ACM Student Chapter organised Flip It for the first-year students. This event was a great success as it came out to be the first interaction of the freshers with the college environment and seniors. There were a series of quiz, whoever replied the fastest was given a topic and was asked to flip the motion.<br>Everyone got an opportunity for showcasing their speaking skills and others got a wonderful chance to learn something new.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_10_0.jpeg'
         ]
     },
     {
         name: 'DEFENSIBLE SECURITY ARCHITECTURE',
         content: "Change is challenging. And security is like a moving target, with the growing need of the internet, protecting our information and data have also become a necessity.<br>Chitkara ACM student chapter organised a webinar on Defensible Security Architecture on August 29,2020. The webinar was conducted by Mr. Mudasir Hussan Wani from VP Information Security, Wealth fund Middle East. Defensible Security Architecture is designed to help students establish and maintain a holistic and layered approach to security. He gave a brief idea about the course where students will learn the fundamentals of up-to-date defensible security architecture and how to engineer it. By enhancing the capabilities and developing the skills, he mentioned how the students will be introduced to newer technologies that will aid in building a robust security infrastructure. He also brings to the table an interesting mix of perimeter security, data security, integrated threat management and cyber security wisdom.<br>Overall it was an interactive session where along with theoretical aspects working paths were also discussed which helped the attendants in understanding the network architecture in department. The webinar was ended with full of information and vision of being safe and secure in the virtual world.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_11_0.jpeg'
         ]
     },
     {
         name: 'TECHWEEK 2020',
         content: "The world is changing at a fast pace and so are the machines that we are making! Institutions are increasingly embracing Data Analytics and Artificial Intelligence to develop valuable insights, which can improve service efficiency, foster public community safety, optimize transportation and enhance the user experience across all areas of society, among a world of other possibilities.<br>Department of Computer Science and Engineering in collaboration with CHITKARA ACM STUDENT CHAPTER  and  DEVELOPER STUDENT CLUBS conducted TECHWEEK 2020(17 August 2020- 22 August 2020), a series of mind-boggling competitions, workshops and expert talks to promote creative, scientific and technical fusion for making an impact on the world.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_12_0.jpeg'
         ]
     },
     {
         name: 'POSTER MAKING COMPETITION',
         content: "TWith the rise in the cases of covid -19, the world is headed to an immediate crises of economy, education and peace. In order to raise the awareness of this pandemic, Chitkara ACM Student chapter organized a poster making competition. The content of the poster was solely based on the awareness, prevention, solutions for COVID 19.<br>We got 111 participants and was a head to head competition. Digital posters were made  by the  means of online photo-editing apps like Adobe and  Canva. With so much of talent and outstanding views, it was a hardcore decision for the judges to choose  up the winners.<br><ol><li>MOHIT KUMAR</li><li>PATEL SHIVANI </li><li>BHARDWAJ NAVYA ANEJA</li></ol><br>A heartiest congratulations to all the winners. Keep up with your work and talent. You all did a great work and we really appreciate the efforts did  by the participants.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_13_0.jpeg'
         ]
     },
     {
         name: 'WEBINAR ON DIGITAL ANALYTICS ASPECTS',
         content: "Data Analytics is a widespread career option. In today’s business world, data analysis plays a role in making decisions more scientific and helping businesses operate more effectively. So in order to enhance the role of data analystics, Chitkara University ACM student chapter organized a webinar on the same.<br>Mr. Shailesh Giri, AVP data analytics EXL was our guest speaker and created an interactive session on digital analytics  aspect for business. Various aspects of data analysis in business was discussed along with its impact on students and universities. Different scientist profiles along with their  journey as a analyst was shared. Attendees took keen part in the session and discussed different building blocks of analytics. The participants were filled with exuberance and gained valuable knowledge from the workshop.<br>It was a healthy one hour session which was well appreciated. The event showcased the combined efforts of the ACM family and gained many positive feedbacks.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_14_0.jpeg'
         ]
     },
     {
         name: 'WEDNESDAY WISDOM INDUSTRY SERIES',
         content: "To familiarise you with popular technologies ACM student chapter, Chitkara University successfully organized WEDNESDAY WISDOM INDUSTRY SERIES , a series of webinars on Innovation Technologies on every Wednesday from 13th May, 2020 to 10th June, 2020. The webinar included a number of Technologies such as AI, Quantum computing, blockchain technology, IOT and many more in the series. The proficient experts were amazing and gave a lot of knowledge regarding technologies .  <br>As we all completely agree this is the era of technology and we all must be awared about them, so our whole ACM team deserves a well appreciation for organizing such an interesting and beneficial webinar for students . ACM society one more time was flawlessly successful in creating a healthy environment of learning technologies.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_15_0.jpg'
         ]
     },
     {
         name: 'EXPERT TALK ON AI',
         content: "Chitkara ACM Student Chapter organized an expert talk on ‘ Artificial Intelligence’ in association with ‘Sebiz InfoTech.Pvt.Ltd’ on ‘ 29 April 2020’ at online platform.<br>AI has been changing our life by invading to different domains. From sending e-mails to powering virtual machines, from self-driving cars to Google maps, the impact of artificial intelligence in everyday life is more understated and far-reaching than science fiction might suggest. ‘Ms.  Vaishali Thakur’ Senior Machine Learning Engineer from Sebiz Infotech. Pvt. Ltd. enlightened students with this truly revolutionary feat of computer science. She explained how AI affects our daily lives and what kind of relationship AI shares with Big Data and cyber security. This expert talk proved to be an interactive session where students not only understood this but also showed active participation by raising multiple queries which were satisfactorily answered by the expert. The talk also revealed various industries where AI is successfully used with various graphical representations for its growth in subsequent times.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_16_0.png'
         ]
     },
     {
         name: 'CODATHON 2020',
         content: "CHITKARA ACM STUDENT CHAPTER  organized  “Codathon-2020”  in association with Coding Ninjas, India on 25 April 2020 at “Codezen”, the online learning platform of Coding Ninjas.<br> Coding Ninjas is one of the largest online tech education companies in India which aims at best ways to train the next generation of developers. Moreover, the most important key point of its platform is that it provides users with an option to program and write code in a programming language of their own choice. Hence, this platform provides ease in writing codes for students. This Codathon2020 included 5 MCQ’s and 3 coding questions within time range of 90 minutes. 494 students registered. There was a wave of curiosity and enthusiasm among the students. Most of the students scored very well and many scored full. However, the winners were decided on basis of timing and marks. We have 3 winners who have not only scored full but also did it in the least time. Special goodies were given to winner and certificates to all participants. Winners detail is as <br><ol><li>Saumya gupta (1st position) 1710991803 Third year CSE</li><li>Aditi gupta ( 2nd Position) 1810991840 Second year CSE</li><li>Anjali mehtani (3rd Position) 1810991862 Second year CSE </li></ol><br>",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_17_0.jpeg'
         ]
     },
     {
         name: 'EXPERT TALK ON CYBER CRIME',
         content: "CHITKARA ACM STUDENT CHAPTER organized a guest lecture on “Cyber Crime” in association with “Steller Data Solution Pvt Ltd.” on 24th February 2020. <br>Cyber Crime has been on the rise for the past few years. Cybercriminals are knowledgeable and hence know how to cover their trails. Therefore, it is important to create awareness for this enormously rising cyber evil. Mr. Rajesh Rana, founder-director of “Steller data Solution Pvt Ltd.”, a cyber-analyst, IT audit, forensic audit and a cybercrime Investigator shared valuable knowledge among the students. He statistically proved the gradual rise and cause of cybercrime and how can one prevent to be one of its victim. It was an interactive session where students showed positive response with persistent enthusiasm. This event was surely a success due to mutual coordination of everyone presented there.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_18_0.jpg'
         ]
     },
     {
         name: 'WORKSHOP ON DJANGO',
         content: "To enhance your skills as a web developer, ACM student chapter, Chitkara University organized a 2 day workshop(30-31 January) on the most intriguing language,Django. Django  is a Python-based free and open-source web framework that follows the model-template-view  architectural pattern. Due to its easy to use functionality and, it’s importance is increasing day by day. It is a total python based reusable framework for real time projects. <br>This workshop was lead by the core members of the society which was well appreciated. It was  interesting and yet  beneficial for students keen in development.  The ACM society as a team was successful in creating a healthy environment of technology.",
         images : [
-            './assets/2020/2020_1_0.jpg'
+            './assets/2020/2020_19_0.jpg'
         ]
     },
 ]
@@ -653,7 +653,7 @@ window.onload=()=>{
     if(year == 2020){
         document.getElementById('event_name').innerHTML = data_2020[event].name;
         document.getElementById('event_paragraph').innerHTML = data_2020[event].content;
-        // document.getElementById('event_img').setAttribute("src", data_2020[event].images[0]);
+        document.getElementById('event_img').setAttribute("src", data_2020[event].images[0]);
     }
 
 }

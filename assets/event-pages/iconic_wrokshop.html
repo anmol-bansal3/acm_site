@@ -53,14 +53,18 @@
 
                <div class="container heading">
                     <!-- Event heading here -->
-                <h1>ETHICAL HACKING</h1>
+                <h1>IONIC WORKSHOP
+                </h1>
                </div>
               <div class="col-md-6 col-md-push-6" id="sticky" style="max-height: 100vh;">
                   <div class="composition">
                      <img
-                        src="../2015/2015_0_0.jpg"
+                        src="../2016/2016_0_0.jpg"
                         alt="photo 3"
                         class="composition_photo"
+                        style="width: 40rem;height: 30rem"
+                        data-toggle="modal"
+                        data-target="#popup-image-gallery"
                         tabindex="0"
                      />
 
@@ -71,11 +75,8 @@
                 
                   <!-- Event descriptioh here -->
                   <p>
-                    ACM student chapter organised a workshop on Ethical Hacking ,”Hack X Ploit” on 3-4th November,2015. Around 200 students were trained by Mr.Rahul Tyagi, AVP Luciedus Techonologies and India’s topmost hacker.
-In this workshop students acknowledged a complete knowledge of basic networking and ethical hacking.This workshop aimed at giving students a basic knowledge of hacking and how they could protect one’s system against hazardous effects. Hacking has been a part of computing for almost five decades and it is a very broad discipline, which covers a wide range of topics.
-
-The workshop was an enriching experience for the students and they were amazed to see the scope and practical implications of Hacking in our day to day life. At the end of the workshop certificates were provided to the students.Top two students were selected for the next level of workshop.
-Students showed keen interest in attending more advanced workshops like this in future.
+                    ACM Student Chapter organised a full day workshop on Android app Development using ionic on 14th September, 2016 in Faraday Hall. Hybrid apps are a blend, hence the name hybrid, of both native and web solutions. Hybrid apps are popular because they allow developers to write code for a mobile app once and still accommodate multiple platforms.Hybrid apps are developed using HTML, CSS and Javascript, and then wrapped in a native applications. All students participated with great zeal and enthusiasm . An interactive decorum was maintained in the hall. It was quite surprising to see such complicated topics like ionic, Angular JS to be simplified to an extent that everybody could learn them easily. Chief speaker of the workshop was Mr. Tejinder Singh, technical head of 9i Technologies. Apart from teaching these topics he also encouraged students to opt for online courses. 46 students participated in the workshop                     <br />
+                     Students showed an enthusiastic approach towards the event. They were keen to ask a lot of questions related to career, technical skills, professional growth, and many more. The talk made students explore a part of parallel computing, helping them both academically and professionally.
                      
                   </p>
                </div>
@@ -93,41 +94,35 @@ for testing
                   <button type="button" class="btn close-btn" title="Close" data-dismiss="modal" aria-label="Close">&#10006;</button>
                   <div class="popup-slider-for">
                      <!-- main images -->
-                     <div class="main-image">
-                        <img src="../events_images/2015/ethical/Poster.jpg" alt="" />
+                     <!-- <div class="main-image">
+                        <img src="../2016/2016_4_0.jpeg" alt="" />
                      </div>
                      <div class="main-image">
-                        <img src="./assets/images/event.jpg" alt="" />
+                        <img src="../2016/2016_4_1.jpeg" alt="" />
                      </div>
                      <div class="main-image">
-                        <img src="./assets/images/img-22.jpg" alt="" />
+                        <img src="../2016/2016_4_2.jpeg" alt="" />
                      </div>
                      <div class="main-image">
-                        <img src="./assets/images/img-23.jpg" alt="" />
-                     </div>
-                     <div class="main-image">
-                        <img src="./assets/images/img-24.jpg" alt="" />
-                     </div>
+                        <img src="../2016/2016_4_3.jpeg" alt="" />
+                     </div> -->
                   </div>
                   <h5 class="pagingInfo"></h5>
                   <div class="popup-slider-nav hidden-xs">
                      <!-- thumbnails -->
-                     <div class="thumbnail-image">
-                        <img src="./assets/images/event.jpg" alt="" />
+                     <!-- <div class="thumbnail-image">
+                        <img src="../2015/2015_4_1.jpeg" alt="" />
                      </div>
                      <div class="thumbnail-image">
-                        <img src="./assets/images/event.jpg" alt="" />
+                        <img src="../2015/2015_4_2.jpeg" alt="" />
                      </div>
                      <div class="thumbnail-image">
-                        <img src="./assets/images/img-22.jpg" alt="" />
+                        <img src="../2015/2015_4_3.jpeg" alt="" />
                      </div>
                      <div class="thumbnail-image">
-                        <img src="./assets/images/img-23.jpg" alt="" />
+                        <img src="../2015/2015_4_4.jpeg" alt="" />
                      </div>
-                     <div class="thumbnail-image">
-                        <img src="./assets/images/img-24.jpg" alt="" />
-                     </div>
-                  </div>
+                     </div> -->
                </div>
             </div>
          </div>
@@ -226,6 +221,29 @@ for testing
                $(".navigation_background").css("display", "block");
             }
          });
+      </script>
+
+      <script>
+          const popUpSlider = document.querySelector(".popup-slider-for")
+          console.log(popUpSlider)
+          let elementToBeAppended = ""
+          for(let i = 0; i < 12; i++) {
+              elementToBeAppended += `<div class="main-image"><img src="../2016/2016_1_${i}.jpg" alt="" /></div>`
+              popUpSlider.innerHTML = elementToBeAppended
+              console.log(popUpSlider)
+          }
+      </script>
+
+      <script>
+          const popUpSliderNav = document.querySelector(".popup-slider-nav")
+          console.log(popUpSliderNav)
+          let elementToBeAppendedNav = ""
+          for(let i = 0; i < 12; i++) {
+              elementToBeAppendedNav += ` <div class="thumbnail-image"><img src="../2016/2016_1_${i}.jpg" alt="" /></div>`
+                     popUpSliderNav.innerHTML = elementToBeAppendedNav
+          }
+          
+          console.log(popUpSliderNav)
       </script>
    </body>
 </html>

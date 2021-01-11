@@ -341,7 +341,11 @@ body.modal-open {
     padding: 6rem 0rem;
   }
   .heading h1 {
+<<<<<<< HEAD
     font-size: 3rem;
+=======
+    font-size: 5rem;
+>>>>>>> c725eae... 2016 events
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 991px) {

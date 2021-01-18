@@ -1,0 +1,155 @@
+.wrapper {
+    min-height: 100vh;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    color: #fff;
+    position: relative;
+}
+
+.section {
+    height: 100vh;
+    font-size: 40px;
+    overflow-x: hidden;
+    font-weight: 100;
+    background-color: #22A7F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section:nth-child(1) {
+    background: white;
+}
+
+.section:nth-child(2) {
+    background: #F64747;
+}
+
+.section:nth-child(3) {
+    background: #22A7F0;
+}
+
+.section:nth-child(4) {
+    background: #F9690E;
+}
+
+.section:nth-child(5) {
+    background: #9B59B6;
+}
+
+.section:nth-child(6) {
+    background: #03C9A9;
+}
+
+.section:nth-child(7) {
+    background: #ffcc00;
+}
+
+.nav__wrapper {
+    position: fixed;
+    height: 100px;
+    padding: 30px;
+    top: 0;
+    left: -45px;
+    /* display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start; */
+    transform: translateY(30vh);
+    z-index: 0;
+    /* border: 1px solid black; */
+}
+
+@media only screen and (max-width: 768px) {}
+
+ul.nav {
+    margin: 0 0 100px 30px;
+    display: block;
+}
+
+.nav__counter {
+    font-size: 1.5em;
+    transition: all 0.15s ease-out;
+}
+
+.nav__title {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin: 0 0 0.25em;
+    width: 300px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+
+.nav__body {
+    font-weight: 100;
+    font-size: 18px;
+    font-size: 18px;
+    width: 300px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+
+ul.nav li {
+    position: relative;
+    transition: all 0.3s ease-out;
+    margin-bottom: 1em;
+}
+
+ul.nav li:after {
+    content: "";
+    display: block;
+    /* border-left: 2px solid white; */
+    border-top: 2px solid white;
+    height: 250px;
+    width: 20px;
+    position: absolute;
+    left: -30px;
+    top: 15px;
+}
+
+ul.nav li a {
+    display: block;
+    padding: 0;
+    color: #fff;
+    transition: all 0.15s ease-out;
+}
+
+ul.nav li a:hover {
+    background-color: transparent;
+    padding-left: 1em;
+}
+
+ul.nav li a:focus {
+    background-color: transparent;
+}
+
+ul.nav li.active {
+    pointer-events: none;
+    padding-left: 1em;
+}
+
+ul.nav li.active:after {
+    width: 35px;
+    height: 400px;
+    top: 35px;
+}
+
+ul.nav li.active .nav__counter {
+    font-size: 2.5em;
+}
+
+ul.nav li.active .nav__title {
+    height: 40px;
+    opacity: 1;
+    overflow: visible;
+}
+
+ul.nav li.active .nav__body {
+    height: 100px;
+    opacity: 1;
+    overflow: visible;
+}

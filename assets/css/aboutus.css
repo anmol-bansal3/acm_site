@@ -35,10 +35,15 @@ body {
 	#header > div > img {
 		margin-top: 70px;
 	}
+	.about-content
+	{
+		padding: 0 !important;
+	}
 }
 .about-content {
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	font-weight: 500;
+	padding:0 100px 0 0;
 }
 .acm-life {
 	margin-top: 3%;
@@ -52,11 +57,10 @@ body {
 .method-heading {
 	color: #003e6b;
 	text-transform: uppercase;
-	font-size: 2.5rem;
+	font-size: 2.7rem;
 	position: relative;
 	margin-left: 5rem;
 	font-weight: 700;
-	font-size: 2.4rem;
 }
 .method-heading-line {
 	position: absolute;
@@ -85,13 +89,13 @@ body {
 	flex-direction: column;
 }
 .method-content h2 {
-	font-size: 2.4rem;
+	font-size: 2.7rem;
 	font-weight: 700;
 	text-align: left;
 	text-transform: uppercase;
 }
 .method-content p {
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 }
 
@@ -99,7 +103,7 @@ body {
 	font-family: Roboto;
 
 	font-weight: 700;
-	font-size: 2.8rem;
+	font-size: 2.7rem;
 
 	color: #003e6b;
 	margin-right: 5px;
@@ -135,7 +139,7 @@ body {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 	line-height: 21px;
 	letter-spacing: 0.05em;
 	text-transform: capitalize;
@@ -146,7 +150,7 @@ body {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 9.2rem;
+	font-size: 6.0rem;
 	line-height: 108px;
 
 	letter-spacing: 0.05em;
@@ -160,7 +164,7 @@ body {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 6.4rem;
+	font-size: 6.0rem;
 	line-height: 75px;
 	/* identical to box height */
 
@@ -173,7 +177,7 @@ body {
 }
 
 .center {
-	margin-top: 15%;
+	margin-top: 5%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -246,7 +250,7 @@ body {
 }
 @media only screen and (max-width: 380px) {
 	.center {
-		margin-top: 10%;
+		margin-top: 5%;
 	}
 }
 footer {

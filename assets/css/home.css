@@ -43,13 +43,15 @@ body {
 	width: 30rem;
 	position: absolute;
 	transform: translate(-50%, -50%);
-	top: 20rem;
+	top: 25%;
 	left: 50%;
 }
+
 .hero-header {
 	position: absolute;
 	transform: translate(-50%, -50%);
-	top: 50rem;
+	/* top: 50rem; */
+	bottom: 10%;
 	left: 50%;
 	text-align: center;
 }
@@ -389,6 +391,7 @@ h4 {
 .swiper-container {
 	padding: 10rem 0;
 	position: relative;
+
 }
 .swiper-slide {
 	background-color: #e8e8e8;
@@ -402,6 +405,7 @@ h4 {
 }
 .swiper-slide img {
 	width: 25rem;
+	border-radius: 50%;
 }
 .des {
 	font-size: 2.2rem;

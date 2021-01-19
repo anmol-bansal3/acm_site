@@ -39,6 +39,10 @@ body {
   /* border: 1px solid black; */
 }
 
+.heading{
+  margin-left: none;
+  margin-right: none;
+}
 .heading h1 {
   text-transform: uppercase;
   font-size: 10rem;
@@ -341,6 +345,7 @@ body.modal-open {
     padding: 6rem 0rem;
   }
   .heading h1 {
+
     font-size: 5rem;
   }
 }

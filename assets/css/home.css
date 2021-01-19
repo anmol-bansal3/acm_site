@@ -389,6 +389,7 @@ h4 {
 .swiper-container {
 	padding: 10rem 0;
 	position: relative;
+
 }
 .swiper-slide {
 	background-color: #e8e8e8;
@@ -402,6 +403,7 @@ h4 {
 }
 .swiper-slide img {
 	width: 25rem;
+	border-radius: 50%;
 }
 .des {
 	font-size: 2.2rem;

@@ -5,44 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Events</title>
-</head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700'>
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-<link rel="stylesheet" href="assets/css/events.css">
-<link rel="stylesheet" href="assets/css/index.css">
 
-<style>
-    #header>div>p {
-        font-size: medium;
-        letter-spacing: 1px;
-        font-size: 18px;
-        line-height: 30px;
-    }
-    
-    #header>div>h1 {
-        margin-bottom: 40px;
-    }
-    
-    #header {
-        padding: 12rem 0;
-    }
-    
-    @media(max-width: 991px) {
-        #header>div>img {
-            margin-top: 70px;
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/events.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <link rel="stylesheet" href="./assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.css">
+    <style>
+        h6 {
+            font-size: 14px !important;
         }
-    }
-</style>
+        
+        @media only screen and (max-width: 768px) {
+            .owl-carousel {
+                margin-left: 30%;
+            }
+            .item {
+                transform: translateX(5%);
+            }
+            .owl-dots {
+                transform: translateX(-15%);
+            }
+        }
+        
+        .card img {
+            vertical-align: middle;
+        }
+        
+        .card-header {
+            border: none !important;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        
+        .card {
+            width: calc( 275px + (305 - 275) * ((100vw - 360px) / (1600 - 360))) !important;
+            box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+            overflow: hidden;
+            width: 300px;
+            height: 400px;
+            padding-top: 0.5em;
+        }
+        
+        .card-body {
+            color: black;
+        }
+        
+        .card-body h6 {
+            font-size: 0.5em!important;
+        }
+        
+        #header>div>p {
+            font-size: medium;
+            letter-spacing: 1px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        
+        #header>div>h1 {
+            margin-bottom: 40px;
+        }
+        
+        #header {
+            padding: 12rem 0;
+        }
+        
+        @media(max-width: 991px) {
+            #header>div>img {
+                margin-top: 70px;
+            }
+        }
+    </style>
+
+</head>
 
 <body>
     <div class="navigation">
         <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
         <label for="navi-toggle" class="navigation_button">
-			<span class="navigation_icon">&nbsp;</span>
-		</label>
+            <span class="navigation_icon">&nbsp;</span>
+        </label>
         <div class="navigation_background">&nbsp;</div>
         <nav class="navigation_nav">
             <ul class="navigation_list">
@@ -53,7 +103,7 @@
                 <li class="navigation_item"><a href="events.html" class="navigation_link">Events</a></li>
             </ul>
         </nav>
-        <div class="container">
+        <div class="container" style="z-index: 99999999;" id="first-section">
             <div id="header" class="row">
                 <div class="col-md-6">
                     <h1>EVENTS</h1>
@@ -66,381 +116,713 @@
             </div>
         </div>
     </div>
-    <section id="upcoming-events">
+    <section id="upcoming-events" style="z-index: 99999999;">
         <h2 class="upcoming-events-heading">Upcoming Events<span class="upcoming-events-heading-line"></span></h2>
         <div class="container-fluid">
             <ul class="upcoming-events-ulist">
                 <li class="upcoming-events-lists">00:00 - 00:45 <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<circle cx="10" cy="10" r="10" fill="#C4C4C4" /></svg> Event Name</li>
+                        <circle cx="10" cy="10" r="10" fill="#C4C4C4" /></svg> Event Name</li>
                 <li class="upcoming-events-lists">00:00 - 00:45 <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<circle cx="10" cy="10" r="10" fill="#C4C4C4" /></svg> Event Name</li>
+                            <circle cx="10" cy="10" r="10" fill="#C4C4C4" /></svg> Event Name</li>
                 <li class="upcoming-events-lists">00:00 - 00:45 <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<circle cx="10" cy="10" r="10" fill="#C4C4C4" /></svg> Event Name</li>
+                                <circle cx="10" cy="10" r="10" fill="#C4C4C4" /></svg> Event Name</li>
                 <li class="upcoming-events-lists">00:00 - 00:45 <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<circle cx="10" cy="10" r="10" fill="#C4C4C4" /></svg> Event Name</li>
+                                    <circle cx="10" cy="10" r="10" fill="#C4C4C4" /></svg> Event Name</li>
             </ul>
         </div>
     </section>
-    <section id="previous-events" data-spy="scroll" data-target="#navbar" style="position: relative;">
-        <h2 class="previous-events-heading">Previous Events<span class="previous-events-heading-line"></span></h2>
-        <div class="row previous-event-container">
-            <nav id="navbar" class="col-lg-2 col-md-3">
-                <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-2020" role="tab" aria-controls="home">2020</a>
-                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-2019" role="tab" aria-controls="profile">2019</a>
-                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-2018" role="tab" aria-controls="messages">2018</a>
-                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-2017" role="tab" aria-controls="settings">2017</a>
-                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-2016" role="tab" aria-controls="messages">2016</a>
-                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-2015" role="tab" aria-controls="messages">2015</a>
-                </div>
-            </nav>
-            <div class="col-lg-10 col-md-9">
-                <div class="tab-content" id="nav-tabContent">
-                    <!-- 2020 -->
-                    <div class="tab-pane fade show active" id="list-2020" role="tabpanel" aria-labelledby="list-home-list">
-                        <div class="swiper-container swiper-container-2020">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_0_0.jpg">
-                                    </div>
-                                    <span class="des">Event Name</span>
-                                </div>
+
+    <section>
 
 
-								<div class="swiper-slide">
-									<div class="img">
-										<img src="./assets/2015/2015_0_0.jpg" >
-									</div>
-									<span class="des">Event Name</span>
-								</div>
-								<div class="swiper-slide">
-									<div class="img">
-										<img src="./assets/2015/2015_0_0.jpg" >
-									</div>
-									<span class="des">Event Name</span>
-								</div>
-								<div class="swiper-slide">
-									<div class="img">
-										<img src="./assets/2015/2015_0_0.jpg" >
-									</div>
-									<span class="des">Event Name</span>
-								</div>
-								<div class="swiper-slide">
-									<div class="img">
-										<img src="./assets/2015/2015_0_0.jpg" >
-									</div>
-									<span class="des">Event Name</span>
-								</div>
-							</div>
-						</div>
-					</div>
+        <body data-spy="scroll" data-target="#navbar" data-offset="500" style="position: relative;">
 
+            <div class="wrapper">
 
-					<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-						<div>
-							<div class="swiper-container swiper-container-2019">
+                <nav class="nav__wrapper" id="navbar">
+                    <ul class="nav">
 
-								<div class="swiper-wrapper">
-									<div class="swiper-slide"><div class="img">
-										<img src="./assets/2015/2015_0_0.jpg" >
-									</div>
-										<span class="des">Event Name<br><span class="name">Name</span></span>
-									</div>
-									<div class="swiper-slide"><div class="img">
-										<img src="./assets/2015/2015_0_0.jpg" >
-									</div>
-										<span class="des">Event Name<br><span class="name">Name</span></span>
-									</div>
-									<div class="swiper-slide"><div class="img">
-										<img src="./assets/2015/2015_0_0.jpg" >
-									</div>
-										<span class="des">Event Name<br><span class="name">Name</span></span>
-									</div>
-									<div class="swiper-slide"><div class="img">
-										<img src="./assets/2015/2015_0_0.jpg" >
-									</div>
-										<span class="des">Event Name<br><span class="name">Name</span></span>
-									</div>
-									<div class="swiper-slide"><div class="img">
-										<img src="./assets/2015/2015_0_0.jpg" >
-									</div>
-										<span class="des">Event Name<br><span class="name">Name</span></span>
-									</div>
-									<div class="swiper-slide"><div class="img">
-										<img src="./assets/2015/2015_0_0.jpg" >
-									</div>
-										<span class="des">Event Name<br><span class="name">Name</span></span>
-									</div>
+                        <li role="presentation" class="active">
+                            <a href="#section1">
+                                <span class="nav__counter">2020</span>
+                            </a>
+                        </li>
 
-					<!-- 2019 -->
-					<div class="tab-pane fade" id="list-2019" role="tabpanel" aria-labelledby="list-profile-list">
-						<div class="swiper-container swiper-container-2019">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide" onclick="changePage(2019,0)">
-									<img src="./assets/events_images/2019/codathon/codathon.jpeg" alt="CODATHON PIC">
-									<span class="des">CODATHON</span>
-								</div>
-								<div class="swiper-slide" onclick="changePage(2019,0)">
-									<img src="./assets/events_images/2019/hackon/hackon.jpeg" alt="HACKON PIC">
-									<span class="des">HACKON</span>
-								</div>
-								<div class="swiper-slide" onclick="changePage(2019,0)">
-									<img src="./assets/events_images/2019/bigData/bigdata.jpg" alt="BIG DATA PIC">
-									<span class="des">BIG DATA</span>
-								</div>
-								<div class="swiper-slide" onclick="changePage(2019,0)">
-									<img src="./assets/events_images/2019/android/Android-Workshop.jpg" alt="ANDROID PIC">
-									<span class="des">ANDROID</span>
-								</div>
-								<div class="swiper-slide" onclick="changePage(2019,0)">
-									<img src="./assets/events_images/2019/webomania/webomania.jpg" alt="WEBOMANIA PIC">
-									<span class="des">WEBOMANIA</span>
-								</div>
-								<div class="swiper-slide" onclick="changePage(2019,0)">
-									<img src="./assets/events_images/2019/reactjs/reactjs.jpeg" alt="REACT JS PIC">
-									<span class="des">REACT JS</span>
-								</div>
-								<div class="swiper-slide" onclick="changePage(2019,0)">
-									<img src="./assets/events_images/2019/nodejs/nodejs.jpg" alt="NODE JS PIC">
-									<span class="des">NODE JS</span>
-								</div>
-								<div class="swiper-slide" onclick="changePage(2019,0)">
-									<img src="./assets/events_images/2019/dataScience/dataScience.jpg" alt="DATA SCIENCE PIC">
-									<span class="des">DATA SCIENCE </span>
-								</div>
-							</div>
-						</div>
-						
+                        <li role="presentation">
+                            <a href="#section2">
+                                <span class="nav__counter">2019</span>
+                            </a>
+                        </li>
 
-					</div>
-					<!-- 2018 -->
-					<div class="tab-pane fade" id="list-2018" role="tabpanel" aria-labelledby="list-messages-list">
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide" onclick="changePage(2018,0)">
-									<img src="./assets/images/event.png" alt="">
-									<span class="des">Event Name</span>
-								</div>
-								<div class="swiper-slide" onclick="changePage(2018,0)">
-									<img src="./assets/images/event.png" alt="">
-									<span class="des">Event Name</span>
-								</div>
-								<div class="swiper-slide" onclick="changePage(2018,0)">
-									<img src="./assets/images/event.png" alt="">
-									<span class="des">Event Name</span>
-								</div>
-								<div class="swiper-slide" onclick="changePage(2018,0)">
-									<img src="./assets/images/event.png" alt="">
-									<span class="des">Event Name</span>
-								</div>
-								<div class="swiper-slide" onclick="changePage(2018,0)">
-									<img src="./assets/images/event.png" alt="">
-									<span class="des">Event Name</span>
-								</div>
-								<div class="swiper-slide" onclick="changePage(2018,0)">
-									<img src="./assets/images/event.png" alt="">
-									<span class="des">Event Name</span>
-								</div>
+                        <li role="presentation">
+                            <a href="#section3">
+                                <span class="nav__counter">2018</span>
+                            </a>
+                        </li>
 
-							</div>
-						</div>
-					</div>
-					<!-- 2017 -->
-					<div class="tab-pane fade" id="list-2017" role="tabpanel" aria-labelledby="list-settings-list">
+                        <li role="presentation">
+                            <a href="#section4">
+                                <span class="nav__counter">2017</span>
+                            </a>
+                        </li>
 
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide" onclick="changePage(2017,0)">
-									<img src="./assets/images/event.png" alt="">
-									<span class="des">Event Name</span>
-								</div>
-								<div class="swiper-slide" onclick="changePage(2017,0)">
-									<img src="./assets/images/event.png" alt="">
-									<span class="des">Event Name</span>
-								</div>
-								<div class="swiper-slide" onclick="changePage(2017,0)">
-									<img src="./assets/images/event.png" alt="">
-									<span class="des">Event Name</span>
-								</div>
-								<div class="swiper-slide" onclick="changePage(2017,0)">
-									<img src="./assets/images/event.png" alt="">
-									<span class="des">Event Name</span>
+                        <li role="presentation">
+                            <a href="#section5">
+                                <span class="nav__counter">2016</span>
+                            </a>
+                        </li>
 
+                        <li role="presentation">
+                            <a href="#section6">
+                                <span class="nav__counter">2015</span>
+                            </a>
+                        </li>
 
-								</div>
-								<div class="swiper-slide">
-									<div class="img">
-										<img src="./assets/2015/2015_0_0.jpg" >
-									</div>
-									<span class="des">Event Name</span>
-								</div>
-								<div class="swiper-slide">
-									<div class="img">
-										<img src="./assets/2015/2015_0_0.jpg" >
-									</div>
-									<span class="des">Event Name</span>
-								</div>
-
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="img">
-                                            <img src="./assets/2015/2015_0_0.jpg">
+                    </ul>
+                </nav>
+                                    <!-- 2020 -->
+                <section class="section section1" id="section1">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="./assets/">
+                                <div class="card shadow-lg text-center ">
+                                    <div class="card-header mt-3 ">
+                                        <div class="row justify-content-start">
+                                            <div class="col-12">
+                                                <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                            </div>
                                         </div>
-                                        <span class="des">Event Name<br><span class="name">Name</span></span>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="img">
-                                            <img src="./assets/2015/2015_0_0.jpg">
-                                        </div>
-                                        <span class="des">Event Name<br><span class="name">Name</span></span>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="img">
-                                            <img src="./assets/2015/2015_0_0.jpg">
-                                        </div>
-                                        <span class="des">Event Name<br><span class="name">Name</span></span>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="img">
-                                            <img src="./assets/2015/2015_0_0.jpg">
-                                        </div>
-                                        <span class="des">Event Name<br><span class="name">Name</span></span>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="img">
-                                            <img src="./assets/2015/2015_0_0.jpg">
-                                        </div>
-                                        <span class="des">Event Name<br><span class="name">Name</span></span>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="img">
-                                            <img src="./assets/2015/2015_0_0.jpg">
-                                        </div>
-                                        <span class="des">Event Name<br><span class="name">Name</span></span>
+                                    <div class="card-body">
+                                        <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">DSP Talk</h5>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_0_0.jpg">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
                                     </div>
-                                    <span class="des">Event Name</span>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_0_0.jpg">
-                                    </div>
-                                    <span class="des">Event Name</span>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Hour Of Code</h5>
                                 </div>
-
-
-
                             </div>
                         </div>
-                    </div>
-                    <!-- 2016 -->
-                    <div class="tab-pane fade" id="list-2016" role="tabpanel" aria-labelledby="list-settings-list">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide" onclick="changePage(2016,0)">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_0_0.jpg">
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
                                     </div>
-                                    <span class="des">Event Name</span>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_0_0.jpg">
-                                    </div>
-                                    <span class="des">Event Name</span>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Code Inovation Series</h5>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_0_0.jpg">
-                                    </div>
-                                    <span class="des">Event Name</span>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_0_0.jpg">
-                                    </div>
-                                    <span class="des">Event Name</span>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_0_0.jpg">
-                                    </div>
-                                    <span class="des">Event Name</span>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_0_0.jpg">
-                                    </div>
-                                    <span class="des">Event Name</span>
-                                </div>
-
-
-
                             </div>
                         </div>
-                    </div>
-                    <!-- 2015 -->
-                    <div class="tab-pane fade" id="list-2015" role="tabpanel" aria-labelledby="list-settings-list">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_0_0.jpg">
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
                                     </div>
-                                    <span class="des">Ethical Hacking Workshop</span>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_1_0.jpg">
-                                    </div>
-                                    <span class="des">Industrial Visit</span>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_0_0.jpg">
-                                    </div>
-                                    <span class="des">CS Coach</span>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_0_0.jpg">
-                                    </div>
-                                    <span class="des">Code Pirates S-3</span>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_0_0.jpg">
-                                    </div>
-                                    <span class="des">Interaction Session</span>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_0_0.jpg">
-                                    </div>
-                                    <span class="des">Code Pirates S-2</span>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="img">
-                                        <img src="./assets/2015/2015_0_0.jpg">
-                                    </div>
-                                    <span class="des">WORKSHOP ON COMPUTING CURRICULA</span>
-                                </div>
-
-
-
                             </div>
                         </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
+
+                </section>
+
+                <section class="section section2" id="section2">
+                    <!-- Section 2 -->
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="section section3" id="section3">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="section section4" id="section4">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="section section5" id="section5">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="section section6" id="section6">
+
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card shadow-lg text-center ">
+                                <div class="card-header mt-3 ">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12">
+                                            <img class="rounded-circle ml-sm-3 mt-3" src="./assets/2015/2015_0_0.jpg" width="250" height="250">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-3 text-center mt-1 mb-4">Event name</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </section>
+
+
             </div>
-        </div>
+
     </section>
-    <footer class="footer">
+
+
+    </body>
+    <footer class="footer" style="z-index: 9999999;">
         <p class="footer-p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non laboriosam dolor commodi sequi eligendi provident, temporibus quaerat reiciendis beatae? Obcaecati!</p>
         <hr>
         <div class="social-icons">
@@ -452,29 +834,59 @@
         <p class="footer-p2">copyright&copy; 2020. All rights reserved</p>
     </footer>
 
-    <script src="./assets/js/event.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src="./assets/js/script.js"></script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3,
-            spaceBetween: 30,
-
-            loop: false,
-        });
-    </script>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
+    <script>
+        var x1 = document.getElementById("first-section").offsetHeight;
+        var x2 = document.getElementById("upcoming-events").offsetHeight;
+        var height = x1 + x2;
+        console.log(height);
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (currentScrollPos > height) {
+                document.getElementById("navbar").style.display = "block";
+            } else {
+                document.getElementById("navbar").style.display = "none";
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/event.js"></script>
+    <script src="./assets/js/owl.carousel.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
 
+    <script>
+        $('.owl-carousel').owlCarousel({
+            center: true,
+            items: 1,
+            // autoWidth: true,
+            margin: 30,
+            responsive: {
+                600: {
+                    items: 3,
+                    autoWidth: false,
 
+                },
+                1025: {
+                    items: 4,
+                    autoWidth: false,
+
+                }
+            },
+            loop: false,
+            dotsEach: true,
+
+        })
+    </script>
 </body>
 
 </html>

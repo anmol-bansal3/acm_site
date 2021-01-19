@@ -51,12 +51,12 @@ p {
 justify-content: center;
 }
 .card{
-  padding: 20px 25px;
+  padding: 25px 30px;
   border-radius: 20px;
   min-width: 270px;
   /* float: left; */
   margin: 15px;
-  margin-left: auto;
+  /* margin-left: auto; */
   /* display: inline-block; */
 }
 .card:hover .card-img{
@@ -73,8 +73,8 @@ justify-content: center;
   background-color: #99daff;
 }
 ion-icon{
-  font-size: 2.45rem;
-  padding: 2.5px;
+  font-size: 2.1rem;
+  padding: 4.1px;
 }
 .icon-back {
   border-radius: 100%;

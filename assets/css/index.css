@@ -5,41 +5,53 @@
 
 .navigation_button {
   background-color: #B4E1FA;
-  height: 4.95rem;
-  width: 4.95rem;
+  /* height: 4.95rem;
+  width: 4.95rem; */
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   position: fixed;
   top: 4rem;
   right: 4.4rem;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-  text-align: center;
+  text-align: center; 
   cursor: pointer; }
   @media (max-width: 56.25em) {
     .navigation_button {
+      height: 40px;
+      width: 40px;
       top: 4rem;
       right: 4rem; } }
   @media (max-width: 37.5em) {
     .navigation_button {
+      height: 40px;
+      width: 40px;
       top: 3rem;
       right: 3rem; } }
 
 .navigation_background {
-  height: 4.7rem;
-  width: 4.7rem;
+  /* height: 4.7rem;
+  width: 4.7rem; */
+  height: 48px;
+  width: 48px;
   border-radius: 50%;
   position: fixed;
-  top: 4.2rem;
-  right: 4.5rem;
+  top: 4.1rem;
+  right: 4.4rem;
   background-image: radial-gradient(#007cba, #0274be);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media (max-width: 56.25em) {
     .navigation_background {
+      height: 38px;
+      width: 38px;
       top: 4.1rem;
       right: 4.1rem; } }
   @media (max-width: 37.5em) {
     .navigation_background {
+      height: 38px;
+      width: 38px;
       top: 3.2rem;
       right: 3.1rem; } }
 
@@ -71,9 +83,9 @@
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  font-size: 3rem;
+  font-size: 45px;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 3rem;
   padding: 1rem 2rem;
   background-size: 220%;
   background-image: linear-gradient(100deg, transparent 0%, transparent 50%, #fff 50%);
@@ -89,11 +101,11 @@
 }
 @media (max-width: 56.25em) {
  .navigation_link:link, .navigation_link:visited{
-      font-size: 2.8rem;
+      font-size: 30px;
     } }
   @media (max-width: 37.5em) {
    .navigation_link:link, .navigation_link:visited  {
-     font-size: 2.5rem; }}
+     font-size: 30px; }}
 .navigation_checkbox:checked ~ .navigation_background {
   transform: scale(80); }
 
@@ -104,12 +116,25 @@
 
 .navigation_icon {
   position: relative;
-  margin-top: 2.5rem; 
+  /* margin-top: 2.5rem;  */
+  margin-top: 25px; 
   color:#55AAD6;
 }
+@media (max-width: 56.25em) {
+  .navigation_icon{
+    margin-top:20px;
+  }
+}
+   @media (max-width: 37.5em) {
+    .navigation_icon{
+      margin-top:20px;
+    }
+  }
+ .navigation_checkbox:checked ~ .navigation_background {
+   transform: scale(200); }
   .navigation_icon, .navigation_icon::before, .navigation_icon::after {
     height: 2px;
-    width: 2.5rem;
+    width: 23px;
     display: inline-block;
     background-color: #333; }
   .navigation_icon::after, .navigation_icon::before {
@@ -118,15 +143,43 @@
     left: 0;
     transition: all .2s; }
   .navigation_icon::before {
-    top: -.9rem; }
+    top: -9px; }
   .navigation_icon::after {
-    top: .9rem; }
+    top: 9px; }
+    .navigation_button:hover .navigation_icon::before {
+      top: -7px; }
+    
+    .navigation_button:hover .navigation_icon::after {
+      top: 7px; }
+    @media (max-width: 56.25em) {
+      .navigation_icon, .navigation_icon::before, .navigation_icon::after{
+        width: 20px;
+      }
+      .navigation_icon::before {
+        top: -7px; }
+      .navigation_icon::after {
+        top: 7px; }
+        .navigation_button:hover .navigation_icon::before {
+          top: -5px; }
+        
+        .navigation_button:hover .navigation_icon::after {
+          top: 5px; }
+    }
+       @media (max-width: 37.5em) {
+        .navigation_icon, .navigation_icon::before, .navigation_icon::after{
+          width: 20px;
+        }
+        .navigation_icon::before {
+          top: -7px; }
+        .navigation_icon::after {
+          top: 7px; }
+          .navigation_button:hover .navigation_icon::before {
+            top: -5px; }
+          
+          .navigation_button:hover .navigation_icon::after {
+            top: 5px; }
+      }
 
-.navigation_button:hover .navigation_icon::before {
-  top: -.7rem; }
-
-.navigation_button:hover .navigation_icon::after {
-  top: .7rem; }
 
 .navigation_checkbox:checked + .navigation_button .navigation_icon {
   background-color: transparent; }

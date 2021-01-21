@@ -5,8 +5,6 @@
 
 .navigation_button {
   background-color: #B4E1FA;
-  /* height: 4.95rem;
-  width: 4.95rem; */
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -31,8 +29,6 @@
       right: 3rem; } }
 
 .navigation_background {
-  /* height: 4.7rem;
-  width: 4.7rem; */
   height: 48px;
   width: 48px;
   border-radius: 50%;
@@ -41,7 +37,8 @@
   right: 4.4rem;
   background-image: radial-gradient(#007cba, #0274be);
   z-index: 1000;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); 
+}
   @media (max-width: 56.25em) {
     .navigation_background {
       height: 38px;
@@ -63,7 +60,8 @@
   z-index: 1500;
   opacity: 0;
   width: 0;
-  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+}
 
 .navigation_list {
   position: absolute;
@@ -116,7 +114,6 @@
 
 .navigation_icon {
   position: relative;
-  /* margin-top: 2.5rem;  */
   margin-top: 25px; 
   color:#55AAD6;
 }
@@ -205,7 +202,6 @@
   font-size: 4rem;
   color: rgb(0,62,107);
   margin-top: 0;
-  /* letter-spacing: 1px; */
   margin-bottom: 20px;
 }
 .footer .col-xs-6{

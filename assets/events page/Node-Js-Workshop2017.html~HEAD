@@ -111,10 +111,10 @@ for testing
                         <div class="popup-slider-for">
                             <!-- main images -->
                             <div class="main-image">
-                                <img src="../events_images/2017/Node-Js-Workshop/Node-js-poster2017.jpg" alt="" />
+                                <img class="images-height" src="../events_images/2017/Node-Js-Workshop/Node-js-poster2017.jpg" alt="" />
                             </div>
                             <div class="main-image">
-                                <img src="../events_images/2017/Node-Js-Workshop/nodejs2017(2).png" alt="" />
+                                <img class="images-height" src="../events_images/2017/Node-Js-Workshop/nodejs2017(2).png" alt="" />
                             </div>
                         </div>
                         <h5 class="pagingInfo"></h5>

@@ -45,7 +45,6 @@ body {
 }
 .heading h1 {
   text-transform: uppercase;
-  font-size: 10rem;
   font-weight: 300;
   margin-bottom: 4rem;
   /* padding: 0px 0px; */
@@ -345,8 +344,14 @@ body.modal-open {
     padding: 6rem 0rem;
   }
   .heading h1 {
+<<<<<<< HEAD
 
     font-size: 5rem;
+=======
+    font-size: 3rem;
+    font-size: 5rem;
+    font-size: 3rem;
+>>>>>>> 578bde4c05e1f8299e5e1efdc880cc0fc0a79432
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 991px) {

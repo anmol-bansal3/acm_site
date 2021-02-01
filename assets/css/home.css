@@ -208,8 +208,7 @@ body {
 .event-image {
 	flex: 0 30rem;
 	height: 40rem;
-	background-image: linear-gradient(rgba(0, 115, 198, 0.719), rgba(0, 115, 198, 0.719)), url(../images/codathon2k21.jpg);
-	background-size: contain;
+	background-image: linear-gradient(rgba(0, 115, 198, 0.719), rgba(0, 115, 198, 0.719)), url(../images/event.jpg);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

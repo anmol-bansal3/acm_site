@@ -24,6 +24,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
 }
+#header{
+	display: flex;
+	justify-content: space-evenly;
+}
 #header > div > h1 {
 	text-transform: uppercase;
 	font-size: 4rem;
@@ -51,6 +55,7 @@ body {
 	font-size: 2.4rem;
 }
 .upcoming-events-heading-line {
+	z-index: 99;
 	position: absolute;
 	transform: translate(-100%, -50%);
 	left: -5px;

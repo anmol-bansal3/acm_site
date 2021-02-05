@@ -19,6 +19,26 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+      <style>
+         @media only screen and (max-width: 426px) and (min-width: 200px){
+         .composition_photo {
+            height: 25vh;
+         }
+         .heading h1{
+            font-size: 4rem;
+         }
+         }
+         /* @media only screen and (min-width: 426px) and (max-width: 992px){
+            .heading h1{
+               font-size: 5.5rem;
+            }
+         } */
+            @media only screen and (max-width: 1200px) and (min-width: 992px){
+            .composition_photo {
+               height: 30vh;
+            }
+            }
+      </style>
    </head>
    <body>
       <div class="container-fluid navigation">
@@ -54,7 +74,7 @@
          <div class="container-fluid">
             <div id="header" class="row" style="margin-top: -100px">
 
-               <div class="container heading">
+               <div class="container-fluid heading">
                     <!-- Event heading here -->
                 <h1>CS PATHSHALA</h1>
                </div>
@@ -64,7 +84,6 @@
                         src="../events_images/2016/cs pathshala/CS pathshala.jpg"
                         alt="photo 3"
                         class="composition_photo"
-                        style="width: 36rem"
                         tabindex="0"    
                      />
 

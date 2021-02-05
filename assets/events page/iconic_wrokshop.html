@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-      <title>Gallery</title>
+      <title>Workshop</title>
 
       <link
          rel="stylesheet"
@@ -19,6 +19,26 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+      <style>
+         @media only screen and (max-width: 426px) and (min-width: 200px){
+         .composition_photo {
+            height: 25vh;
+         }
+         .heading h1{
+            font-size: 3.5rem;
+         }
+         }
+         /* @media only screen and (min-width: 426px) and (max-width: 992px){
+            .heading h1{
+               font-size: 5.5rem;
+            }
+         } */
+            @media only screen and (max-width: 1200px) and (min-width: 992px){
+            .composition_photo {
+               height: 27vh;
+            }
+            }
+      </style>
    </head>
    <body>
       <div class="container-fluid navigation">
@@ -54,7 +74,7 @@
          <div class="container-fluid">
             <div id="header" class="row" style="margin-top: -100px">
 
-               <div class="container heading">
+               <div class="container-fluid heading">
                     <!-- Event heading here -->
                 <h1>IONIC WORKSHOP
                 </h1>
@@ -65,7 +85,6 @@
                         src="../events_images/2016/ionic workshop/IONIC-WORKSHOP-2016.jpg"
                         alt="photo 3"
                         class="composition_photo"
-                        style="width: 40rem;height: 30rem"
                         data-toggle="modal"
                         data-target="#popup-image-gallery"
                         tabindex="0"
@@ -97,9 +116,9 @@ for testing
                   <button type="button" class="btn close-btn" title="Close" data-dismiss="modal" aria-label="Close">&#10006;</button>
                   <div class="popup-slider-for">
                      <!-- main images -->
-                     <div class="main-image">
+                     <!-- <div class="main-image">
                         <img src="../events_images/2016/ionic workshop/IONIC-WORKSHOP-2016-1.jpg" alt="" />
-                     </div>
+                     </div> -->
                      <div class="main-image">
                         <img src="../events_images/2016/ionic workshop/IONIC-WORKSHOP-2016-2.jpg" alt="" />
                      </div>
@@ -143,9 +162,9 @@ for testing
                   <h5 class="pagingInfo"></h5>
                   <div class="popup-slider-nav hidden-xs">
                      <!-- thumbnails -->
-                     <div class="thumbnail-image">
+                     <!-- <div class="thumbnail-image">
                         <img src="../events_images/2016/ionic workshop/IONIC-WORKSHOP-2016-1.jpg" alt="" />
-                     </div>
+                     </div> -->
                      <div class="thumbnail-image">
                         <img src="../events_images/2016/ionic workshop/IONIC-WORKSHOP-2016-2.jpg" alt="" />
                      </div>

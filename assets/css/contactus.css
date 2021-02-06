@@ -28,12 +28,17 @@ body {
 }
 .front {
   text-align: center;
-  width: 150px;
+  /* width: 150px; */
 }
 .back {
-  text-align: left;
+  text-align: center;
 }
-
+.back p{
+  font-size: 1.5rem;
+}
+.contents{
+  padding: 10px;
+}
 @media only screen and (max-width: 950px) {
   .xy {
     border-right: none;
@@ -43,7 +48,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    width: 150px;
+    /* width: 150px; */
   }
   .back {
     text-align: center;

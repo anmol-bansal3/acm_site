@@ -136,9 +136,10 @@ body {
 	margin-top: 3px;
 }
 .carousel-indicators li.active {
-	height: 2rem;
-	width: 2rem;
+	height: 1.8rem;
+	width: 1.8rem;
 	margin-top: 0;
+	background-color: #003e6b
 }
 .slide-content {
 	display: flex;

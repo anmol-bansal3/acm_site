@@ -22,27 +22,34 @@
 }
 
 .section:nth-child(2) {
-    background: #F64747;
+    /* background: #F64747; */
+    background: linear-gradient(#F64747,#22A7F0);
+    /* border-bottom: #22A7F0 solid 3px; */
 }
 
 .section:nth-child(3) {
-    background: #22A7F0;
+    /* background: #22A7F0; */
+    background: linear-gradient(#22A7F0,#F9690E);
 }
 
 .section:nth-child(4) {
-    background: #F9690E;
+    /* background: #F9690E; */
+    background: linear-gradient(#F9690e,#9859b6);
 }
 
 .section:nth-child(5) {
-    background: #9B59B6;
+    /* background: #9B59B6; */
+    background: linear-gradient(#9b59b6,#03c9a9);
 }
 
 .section:nth-child(6) {
-    background: #03C9A9;
+    /* background: #03C9A9; */
+    background: linear-gradient(#03c9a9,#ffcc00);
 }
 
 .section:nth-child(7) {
-    background: #ffcc00;
+    /* background: #ffcc00; */
+    background: linear-gradient(#ffcc00,#F9690e);
 }
 
 .nav__wrapper {

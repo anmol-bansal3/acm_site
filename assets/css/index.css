@@ -70,7 +70,9 @@
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
-  width: 100%; }
+  width: 100%; 
+  padding: 0;
+}
 
 .navigation_item {
   margin: 1rem;
@@ -81,7 +83,7 @@
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  font-size: 45px;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 3rem;
   padding: 1rem 2rem;
@@ -97,13 +99,13 @@
   color: #0274be;
   background-position: 100%; 
 }
-@media (max-width: 56.25em) {
+@media (max-width: 992px) {
  .navigation_link:link, .navigation_link:visited{
-      font-size: 30px;
+      font-size: 3rem;
     } }
-  @media (max-width: 37.5em) {
+  @media (max-width: 425px) {
    .navigation_link:link, .navigation_link:visited  {
-     font-size: 30px; }}
+     font-size: 2.5rem; }}
 .navigation_checkbox:checked ~ .navigation_background {
   transform: scale(80); }
 

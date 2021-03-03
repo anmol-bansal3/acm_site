@@ -3,10 +3,14 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
+	background-color: #ffffff;
 }
 
 .navigation{
   padding: 10rem 0rem;
+}
+#header{
+	background-color: #ffffff;
 }
 #header > div > h1 {
 	text-transform: uppercase;
@@ -22,6 +26,7 @@ body {
 /* Gallery */
 /******************************/
 section {
+	background-color: #ffffff;
 	column-width: 300px;
 	column-gap: 5px;
 	padding: 5px;

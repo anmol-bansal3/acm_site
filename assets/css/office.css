@@ -49,6 +49,7 @@ p {
 .cards{
   display: flex;
 justify-content: center;
+max-width: 1600px;
 }
 .card{
   padding: 25px 30px;
@@ -94,4 +95,12 @@ ion-icon{
 }
 .card-text h4{
   text-transform: uppercase;
+}
+.faculty{
+  color: #003e6b;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0px;
 }
